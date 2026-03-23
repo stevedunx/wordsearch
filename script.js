@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         showDirectionPrompt();
 
         const { theme, grid, list } = getUrlParams();
-        if (theme && grid && list && grid !== list) {
+        if (theme && grid && list) {
             generateWordsearch();
         }
     });
@@ -229,13 +229,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // If no languages selected, require selection
         if (!gridLang || !listLang) {
             note.textContent = 'Select both grid and word list languages to generate the wordsearch.';
-            showDirectionPrompt();
-            return;
-        }
-
-        // Don't allow same language for grid and list
-        if (gridLang === listLang) {
-            note.textContent = 'Grid and word list languages must be different.';
             showDirectionPrompt();
             return;
         }
