@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordsearch Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spanish-English Food Wordsearch</h1>
+        <div class="input-section">
+            <p>Select matching direction and find the target language words in the grid.</p>
+            <div>
+                <label><input type="radio" name="direction" value="es-en"> Spanish in grid, English in list</label>
+                <label><input type="radio" name="direction" value="en-es"> English in grid, Spanish in list</label>
+            </div>
+            <p id="direction-note" style="font-size:0.95em; color:#555;">Select a direction to generate the wordsearch.</p>
+        </div>
+        <div class="wordsearch-section">
+            <div id="grid"></div>
+            <div id="word-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
