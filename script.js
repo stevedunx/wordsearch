@@ -168,6 +168,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    function getGridWord(value) {
+        return value.replace(/\s+/g, '');
+    }
+
     function getCurrentTheme() {
         const selected = document.querySelector('input[name="theme"]:checked');
         return selected ? selected.value : 'food';
@@ -253,11 +257,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const seededRandom = createSeededRandom(`${theme}:${sourceField}:${gridSize}`);
 
         // Keep source words in a lookup for any valid location in the grid
-        wordData.forEach(item => sourceWordsSet.add(item[sourceField]));
+        wordData.forEach(item => sourceWordsSet.add(getGridWord(item[sourceField])));
 
         // Try to place each word with selected source language in grid
         for (const item of wordData) {
-            const sourceWord = item[sourceField];
+            const sourceWord = getGridWord(item[sourceField]);
             const placement = placeWord(currentGrid, sourceWord, gridSize, seededRandom);
             if (placement) {
                 placedWords.push({ ...placement, target: item[targetField], source: sourceWord });
