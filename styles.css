@@ -148,6 +148,7 @@ button:hover {
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+    touch-action: none;
 }
 
 .cell:hover {

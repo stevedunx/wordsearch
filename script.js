@@ -323,6 +323,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 cell.dataset.col = col;
                 cell.addEventListener('mousedown', handleMouseDown);
                 cell.addEventListener('mouseenter', handleMouseEnter);
+                cell.addEventListener('touchstart', handleTouchStart, { passive: false });
+                cell.addEventListener('touchmove', handleTouchMove, { passive: false });
                 gridElement.appendChild(cell);
             }
         }
@@ -353,6 +355,45 @@ document.addEventListener('DOMContentLoaded', function() {
         currentSelection = [startCell];
         updateSelectionDisplay();
         document.addEventListener('mouseup', handleMouseUp);
+    }
+
+    function getCellFromTouch(event) {
+        const touch = event.touches[0] || event.changedTouches[0];
+        if (!touch) return null;
+        const element = document.elementFromPoint(touch.clientX, touch.clientY);
+        if (!element || !element.classList.contains('cell')) return null;
+        return element;
+    }
+
+    function handleTouchStart(e) {
+        if (isSelecting) return;
+        const cell = getCellFromTouch(e);
+        if (!cell) return;
+        e.preventDefault();
+        isSelecting = true;
+        startCell = { row: parseInt(cell.dataset.row), col: parseInt(cell.dataset.col) };
+        currentSelection = [startCell];
+        updateSelectionDisplay();
+        document.addEventListener('touchend', handleTouchEnd);
+    }
+
+    function handleTouchMove(e) {
+        if (!isSelecting) return;
+        const cell = getCellFromTouch(e);
+        if (!cell) return;
+        e.preventDefault();
+        const row = parseInt(cell.dataset.row);
+        const col = parseInt(cell.dataset.col);
+        currentSelection = getSelectionCells(startCell, { row, col });
+        updateSelectionDisplay();
+    }
+
+    function handleTouchEnd() {
+        if (!isSelecting) return;
+        isSelecting = false;
+        checkSelection();
+        clearSelectionDisplay();
+        document.removeEventListener('touchend', handleTouchEnd);
     }
 
     function handleMouseEnter(e) {
