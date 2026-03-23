@@ -229,12 +229,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const theme = getCurrentTheme();
         const themeName = theme === 'family' ? 'Family Members' : 'Food';
-        const directionText = `${getLanguageDisplayName(gridLang)} → ${getLanguageDisplayName(listLang)} (${themeName})`;
+        const directionText = `${getLanguageDisplayName(gridLang)} → ${getLanguageDisplayName(listLang)} - ${themeName}`;
         note.textContent = 'Direction set to ' + directionText + '.';
 
         // Show selected pair/direction in page title and heading
         document.title = `Wordsearch: ${directionText}`;
-        document.querySelector('h1').textContent = `Wordsearch (${directionText})`;
+        document.querySelector('h1').textContent = `Wordsearch: ${directionText}`;
 
         updateUrlParams(theme, gridLang, listLang);
 
@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function displayWordList(placements, displayKey) {
         const langName = getLanguageDisplayName(displayKey);
-        wordListDiv.innerHTML = '<h3>Words to find (' + langName + '):</h3>';
+        wordListDiv.innerHTML = '<h3>Words to find:</h3>';
         const ul = document.createElement('ul');
         placements.forEach(placement => {
             const li = document.createElement('li');
