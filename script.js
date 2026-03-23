@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const theme = getCurrentTheme();
         const themeName = theme === 'family' ? 'Family Members' : 'Food';
-        const directionText = `${getLanguageDisplayName(gridLang)} → ${getLanguageDisplayName(listLang)} - ${themeName}`;
+        const directionText = `${getLanguageDisplayName(listLang)} → ${getLanguageDisplayName(gridLang)} — ${themeName}`;
         note.textContent = 'Direction set to ' + directionText + '.';
 
         // Show selected pair/direction in page title and heading
