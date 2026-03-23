@@ -1,77 +1,77 @@
 [
   {
-    "spanish": "PAN",
-    "french": "PAIN",
-    "english": "Bread"
+    "es": "PAN",
+    "fr": "PAIN",
+    "en": "Bread"
   },
   {
-    "spanish": "QUESO",
-    "french": "FROMAGE",
-    "english": "Cheese"
+    "es": "QUESO",
+    "fr": "FROMAGE",
+    "en": "Cheese"
   },
   {
-    "spanish": "CARNE",
-    "french": "VIANDE",
-    "english": "Meat"
+    "es": "CARNE",
+    "fr": "VIANDE",
+    "en": "Meat"
   },
   {
-    "spanish": "PESCADO",
-    "french": "POISSON",
-    "english": "Fish"
+    "es": "PESCADO",
+    "fr": "POISSON",
+    "en": "Fish"
   },
   {
-    "spanish": "VERDURAS",
-    "french": "LÉGUMES",
-    "english": "Vegetables"
+    "es": "VERDURAS",
+    "fr": "LÉGUMES",
+    "en": "Vegetables"
   },
   {
-    "spanish": "FRUTA",
-    "french": "FRUIT",
-    "english": "Fruit"
+    "es": "FRUTA",
+    "fr": "FRUIT",
+    "en": "Fruit"
   },
   {
-    "spanish": "AGUA",
-    "french": "EAU",
-    "english": "Water"
+    "es": "AGUA",
+    "fr": "EAU",
+    "en": "Water"
   },
   {
-    "spanish": "VINO",
-    "french": "VIN",
-    "english": "Wine"
+    "es": "VINO",
+    "fr": "VIN",
+    "en": "Wine"
   },
   {
-    "spanish": "CAFÉ",
-    "french": "CAFÉ",
-    "english": "Coffee"
+    "es": "CAFÉ",
+    "fr": "CAFÉ",
+    "en": "Coffee"
   },
   {
-    "spanish": "TÉ",
-    "french": "THÉ",
-    "english": "Tea"
+    "es": "TÉ",
+    "fr": "THÉ",
+    "en": "Tea"
   },
   {
-    "spanish": "HUEVO",
-    "french": "OEUF",
-    "english": "Egg"
+    "es": "HUEVO",
+    "fr": "OEUF",
+    "en": "Egg"
   },
   {
-    "spanish": "LECHE",
-    "french": "LAIT",
-    "english": "Milk"
+    "es": "LECHE",
+    "fr": "LAIT",
+    "en": "Milk"
   },
   {
-    "spanish": "MANTEQUILLA",
-    "french": "BEURRE",
-    "english": "Butter"
+    "es": "MANTEQUILLA",
+    "fr": "BEURRE",
+    "en": "Butter"
   },
   {
-    "spanish": "AZÚCAR",
-    "french": "SUCRE",
-    "english": "Sugar"
+    "es": "AZÚCAR",
+    "fr": "SUCRE",
+    "en": "Sugar"
   },
   {
-    "spanish": "SAL",
-    "french": "SEL",
-    "english": "Salt"
+    "es": "SAL",
+    "fr": "SEL",
+    "en": "Salt"
   }
 ]

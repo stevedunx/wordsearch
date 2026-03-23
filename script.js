@@ -16,23 +16,75 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let wordsLoaded = false;
 
+    function getUrlParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            theme: params.get('theme'),
+            grid: params.get('grid'),
+            list: params.get('list')
+        };
+    }
+
+    function updateUrlParams(theme, gridLang, listLang) {
+        const params = new URLSearchParams();
+        if (theme) params.set('theme', theme);
+        if (gridLang) params.set('grid', gridLang);
+        if (listLang) params.set('list', listLang);
+        const newUrl = `${window.location.pathname}?${params.toString()}`;
+        window.history.replaceState({}, '', newUrl);
+    }
+
+    function applyUrlSettings() {
+        const { theme, grid, list } = getUrlParams();
+        const validThemes = ['food', 'family'];
+        const validLangs = ['es', 'fr', 'en'];
+
+        if (validThemes.includes(theme)) {
+            const themeRadio = document.querySelector(`input[name="theme"][value="${theme}"]`);
+            if (themeRadio) themeRadio.checked = true;
+        }
+
+        if (validLangs.includes(grid)) {
+            const gridRadio = document.querySelector(`input[name="grid-lang"][value="${grid}"]`);
+            if (gridRadio) gridRadio.checked = true;
+        }
+
+        if (validLangs.includes(list)) {
+            const listRadio = document.querySelector(`input[name="list-lang"][value="${list}"]`);
+            if (listRadio) listRadio.checked = true;
+        }
+
+        if (theme || grid || list) {
+            updateUrlParams(getCurrentTheme(), getCurrentGridLanguage(), getCurrentListLanguage());
+        }
+    }
+
+    applyUrlSettings();
+
     // Load words on page load; wait for selections to generate
     loadWords().then(() => {
         wordsLoaded = true;
+        if (!getCurrentListLanguage()) setDefaultListLanguage();
         showDirectionPrompt();
+
+        const { theme, grid, list } = getUrlParams();
+        if (theme && grid && list && grid !== list) {
+            generateWordsearch();
+        }
     });
 
     themeRadios.forEach(radio => radio.addEventListener('change', () => {
+        applyUrlSettings();
         loadWords().then(() => {
             wordsLoaded = true;
-            // Don't auto-generate, just load the words
+            if (!getCurrentListLanguage()) setDefaultListLanguage();
         });
     }));
     gridLangRadios.forEach(radio => radio.addEventListener('change', () => {
-        // Don't auto-generate, just update selection
+        updateUrlParams(getCurrentTheme(), getCurrentGridLanguage(), getCurrentListLanguage());
     }));
     listLangRadios.forEach(radio => radio.addEventListener('change', () => {
-        // Don't auto-generate, just update selection
+        updateUrlParams(getCurrentTheme(), getCurrentGridLanguage(), getCurrentListLanguage());
     }));
 
     // Generate button event listener
@@ -62,13 +114,52 @@ document.addEventListener('DOMContentLoaded', function() {
             wordData = await response.json();
             // Ensure words are normalized uppercase for grid placement
             wordData = wordData.map(item => ({
-                spanish: item.spanish.toUpperCase(),
-                french: item.french.toUpperCase(),
-                english: item.english.toUpperCase()
+                es: item.es ? item.es.toUpperCase() : item.spanish.toUpperCase(),
+                fr: item.fr ? item.fr.toUpperCase() : item.french.toUpperCase(),
+                en: item.en ? item.en.toUpperCase() : item.english.toUpperCase()
             }));
         } catch (error) {
             console.error('Error loading words:', error);
             alert('Error loading words data.');
+        }
+    }
+
+    function getBrowserLanguage() {
+        const lang = navigator.language || navigator.userLanguage;
+        const primaryLang = lang.split('-')[0].toLowerCase();
+
+        switch (primaryLang) {
+            case 'es':
+                return 'es';
+            case 'fr':
+                return 'fr';
+            case 'en':
+                return 'en';
+            default:
+                return 'fr'; // Default fallback
+        }
+    }
+
+    function setDefaultListLanguage() {
+        const browserLang = getBrowserLanguage();
+        const listLangRadio = document.querySelector(`input[name="list-lang"][value="${browserLang}"]`);
+        if (listLangRadio) {
+            listLangRadio.checked = true;
+        }
+    }
+
+    function mapLangCodeToField(code) {
+        // JSON now uses language code keys directly
+        if (['es', 'fr', 'en'].includes(code)) return code;
+        return 'fr';
+    }
+
+    function getLanguageDisplayName(code) {
+        switch (code) {
+            case 'es': return 'Spanish';
+            case 'fr': return 'French';
+            case 'en': return 'English';
+            default: return 'Unknown';
         }
     }
 
@@ -113,8 +204,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const theme = getCurrentTheme();
         const themeName = theme === 'family' ? 'Family Members' : 'Food';
-        const directionText = `${gridLang.charAt(0).toUpperCase() + gridLang.slice(1)} → ${listLang.charAt(0).toUpperCase() + listLang.slice(1)} (${themeName})`;
+        const directionText = `${getLanguageDisplayName(gridLang)} → ${getLanguageDisplayName(listLang)} (${themeName})`;
         note.textContent = 'Direction set to ' + directionText + '.';
+
+        // Show selected pair/direction in page title and heading
+        document.title = `Wordsearch: ${directionText}`;
+        document.querySelector('h1').textContent = `Wordsearch (${directionText})`;
+
+        updateUrlParams(theme, gridLang, listLang);
 
         const gridSize = 15;
         currentGrid = createEmptyGrid(gridSize);
@@ -122,15 +219,18 @@ document.addEventListener('DOMContentLoaded', function() {
         foundWords = new Set();
         sourceWordsSet = new Set();
 
+        const sourceField = mapLangCodeToField(gridLang);
+        const targetField = mapLangCodeToField(listLang);
+
         // Keep source words in a lookup for any valid location in the grid
-        wordData.forEach(item => sourceWordsSet.add(item[gridLang]));
+        wordData.forEach(item => sourceWordsSet.add(item[sourceField]));
 
         // Try to place each word with selected source language in grid
         for (const item of wordData) {
-            const sourceWord = item[gridLang];
+            const sourceWord = item[sourceField];
             const placement = placeWord(currentGrid, sourceWord, gridSize);
             if (placement) {
-                placedWords.push({ ...placement, target: item[listLang], source: sourceWord });
+                placedWords.push({ ...placement, target: item[targetField], source: sourceWord });
             }
         }
 
@@ -143,21 +243,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Display the word list
         displayWordList(placedWords, listLang);
 
-        // Show "New Wordsearch" button and hide generate button
-        document.getElementById('generate-btn').style.display = 'none';
-        const newBtn = document.createElement('button');
-        newBtn.id = 'new-btn';
-        newBtn.textContent = 'New Wordsearch';
-        newBtn.style.cssText = 'padding: 12px 24px; background-color: #2196F3; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; margin-left: 10px;';
-        newBtn.addEventListener('click', () => {
-            // Reset the interface
-            document.querySelector('.input-section').style.display = 'block';
-            document.getElementById('generate-btn').style.display = 'inline-block';
-            newBtn.remove();
-            showDirectionPrompt();
-            foundWords.clear();
-        });
-        document.querySelector('.button-section').appendChild(newBtn);
+        // Hide the input section to focus on the wordsearch
+        document.querySelector('.input-section').style.display = 'none';
     }
 
     function createEmptyGrid(size) {

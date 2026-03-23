@@ -1,62 +1,62 @@
 [
   {
-    "spanish": "PADRE",
-    "french": "PERE",
-    "english": "Father"
+    "es": "PADRE",
+    "fr": "PERE",
+    "en": "Father"
   },
   {
-    "spanish": "MADRE",
-    "french": "MERE",
-    "english": "Mother"
+    "es": "MADRE",
+    "fr": "MERE",
+    "en": "Mother"
   },
   {
-    "spanish": "HIJO",
-    "french": "FILS",
-    "english": "Son"
+    "es": "HIJO",
+    "fr": "FILS",
+    "en": "Son"
   },
   {
-    "spanish": "HIJA",
-    "french": "FILLE",
-    "english": "Daughter"
+    "es": "HIJA",
+    "fr": "FILLE",
+    "en": "Daughter"
   },
   {
-    "spanish": "HERMANO",
-    "french": "FRERE",
-    "english": "Brother"
+    "es": "HERMANO",
+    "fr": "FRERE",
+    "en": "Brother"
   },
   {
-    "spanish": "HERMANA",
-    "french": "SOEUR",
-    "english": "Sister"
+    "es": "HERMANA",
+    "fr": "SOEUR",
+    "en": "Sister"
   },
   {
-    "spanish": "ABUELO",
-    "french": "GRANDPERE",
-    "english": "Grandfather"
+    "es": "ABUELO",
+    "fr": "GRANDPERE",
+    "en": "Grandfather"
   },
   {
-    "spanish": "ABUELA",
-    "french": "GRANDMERE",
-    "english": "Grandmother"
+    "es": "ABUELA",
+    "fr": "GRANDMERE",
+    "en": "Grandmother"
   },
   {
-    "spanish": "TIO",
-    "french": "ONCLE",
-    "english": "Uncle"
+    "es": "TIO",
+    "fr": "ONCLE",
+    "en": "Uncle"
   },
   {
-    "spanish": "TIA",
-    "french": "TANTE",
-    "english": "Aunt"
+    "es": "TIA",
+    "fr": "TANTE",
+    "en": "Aunt"
   },
   {
-    "spanish": "PRIMO",
-    "french": "COUSIN",
-    "english": "Cousin"
+    "es": "PRIMO",
+    "fr": "COUSIN",
+    "en": "Cousin"
   },
   {
-    "spanish": "PRIMA",
-    "french": "COUSINE",
-    "english": "Cousin"
+    "es": "PRIMA",
+    "fr": "COUSINE",
+    "en": "Cousin"
   }
 ]
