@@ -5,9 +5,9 @@ A static website that generates wordsearch puzzles with vocabulary in multiple l
 ## Features
 
 - Multiple themes: Food vocabulary and Family member names
-- Pre-loaded vocabulary words from `food.json` and `family.json` with `es`, `fr`, and `en` translations
+- Pre-loaded vocabulary words from `food.json` and `family.json` with `es`, `fr`, `en`, and `kw` translations
 - Supports all combinations of grid and word list languages
-- Generates a 15x15 wordsearch grid with words placed in random directions
+- Generates a 12x12 wordsearch grid with words placed in deterministic directions
 - Translation words displayed in the list for lookup
 - Interactive selection: click and drag to find words
 - Visual feedback for found words (highlighted in yellow, struck through in list)
@@ -17,7 +17,7 @@ A static website that generates wordsearch puzzles with vocabulary in multiple l
 1. Open `index.html` in a web browser
 2. Select a theme: Food or Family Members
 3. Select the language for the grid (where words will be hidden) - `es` is selected by default
-4. The word list language automatically defaults to your browser's language (es, fr, or en)
+4. The word list language automatically defaults to your browser's language (`es`, `fr`, `en`, or `kw` when available)
 5. Adjust selections as needed, then click the "Load Wordsearch" button to generate the puzzle
 6. The selection form will be hidden and the wordsearch will fill the screen
 7. Click and drag on the grid to select sequences of letters
@@ -27,7 +27,7 @@ A static website that generates wordsearch puzzles with vocabulary in multiple l
 
 ## Adding More Words
 
-Edit the appropriate JSON file to add more word pairs. Each entry should have all three languages:
+Edit the appropriate JSON file to add more word pairs. Each entry should have all four languages:
 
 ### Food words (`food.json`):
 ```json
@@ -35,7 +35,8 @@ Edit the appropriate JSON file to add more word pairs. Each entry should have al
   {
     "es": "PAN",
     "fr": "PAIN",
-    "en": "BREAD"
+    "en": "BREAD",
+    "kw": "BARA"
   }
 ]
 ```
@@ -46,7 +47,8 @@ Edit the appropriate JSON file to add more word pairs. Each entry should have al
   {
     "es": "PADRE",
     "fr": "PERE",
-    "en": "FATHER"
+    "en": "FATHER",
+    "kw": "TAS"
   }
 ]
 ```

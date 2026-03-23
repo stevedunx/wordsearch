@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function applyUrlSettings() {
         const { theme, grid, list } = getUrlParams();
         const validThemes = ['food', 'family'];
-        const validLangs = ['es', 'fr', 'en'];
+        const validLangs = ['es', 'fr', 'en', 'kw'];
 
         if (validThemes.includes(theme)) {
             const themeRadio = document.querySelector(`input[name="theme"][value="${theme}"]`);
@@ -117,7 +117,8 @@ document.addEventListener('DOMContentLoaded', function() {
             wordData = wordData.map(item => ({
                 es: item.es ? item.es.toUpperCase() : item.spanish.toUpperCase(),
                 fr: item.fr ? item.fr.toUpperCase() : item.french.toUpperCase(),
-                en: item.en ? item.en.toUpperCase() : item.english.toUpperCase()
+                en: item.en ? item.en.toUpperCase() : item.english.toUpperCase(),
+                kw: item.kw ? item.kw.toUpperCase() : ''
             }));
         } catch (error) {
             console.error('Error loading words:', error);
@@ -136,6 +137,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 return 'fr';
             case 'en':
                 return 'en';
+            case 'kw':
+                return 'kw';
             default:
                 return 'fr'; // Default fallback
         }
@@ -151,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function mapLangCodeToField(code) {
         // JSON now uses language code keys directly
-        if (['es', 'fr', 'en'].includes(code)) return code;
+        if (['es', 'fr', 'en', 'kw'].includes(code)) return code;
         return 'fr';
     }
 
@@ -160,6 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'es': return 'Spanish';
             case 'fr': return 'French';
             case 'en': return 'English';
+            case 'kw': return 'Cornish';
             default: return 'Unknown';
         }
     }

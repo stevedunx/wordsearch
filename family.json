@@ -2,61 +2,73 @@
   {
     "es": "PADRE",
     "fr": "PERE",
-    "en": "Father"
+    "en": "Father",
+    "kw": "TAS"
   },
   {
     "es": "MADRE",
     "fr": "MERE",
-    "en": "Mother"
+    "en": "Mother",
+    "kw": "MAMM"
   },
   {
     "es": "HIJO",
     "fr": "FILS",
-    "en": "Son"
+    "en": "Son",
+    "kw": "MAB"
   },
   {
     "es": "HIJA",
     "fr": "FILLE",
-    "en": "Daughter"
+    "en": "Daughter",
+    "kw": "MERGH"
   },
   {
     "es": "HERMANO",
     "fr": "FRERE",
-    "en": "Brother"
+    "en": "Brother",
+    "kw": "BRODER"
   },
   {
     "es": "HERMANA",
     "fr": "SOEUR",
-    "en": "Sister"
+    "en": "Sister",
+    "kw": "HWOR"
   },
   {
     "es": "ABUELO",
     "fr": "GRANDPERE",
-    "en": "Grandfather"
+    "en": "Grandfather",
+    "kw": "TAS GWYNN"
   },
   {
     "es": "ABUELA",
     "fr": "GRANDMERE",
-    "en": "Grandmother"
+    "en": "Grandmother",
+    "kw": "MAMM WYNN"
   },
   {
     "es": "TIO",
     "fr": "ONCLE",
-    "en": "Uncle"
+    "en": "Uncle",
+    "kw": "EWNTER"
   },
   {
     "es": "TIA",
     "fr": "TANTE",
-    "en": "Aunt"
+    "en": "Aunt",
+    "kw": "MODREP"
   },
   {
     "es": "PRIMO",
     "fr": "COUSIN",
-    "en": "Cousin"
+    "en": "Cousin",
+    "kw": "KENDEROW"
   },
   {
     "es": "PRIMA",
     "fr": "COUSINE",
-    "en": "Cousin"
+    "en": "Cousin",
+    "kw": "KENDEROW"
   }
 ]
