@@ -118,6 +118,20 @@ h1 {
     background-color: #5a6268;
 }
 
+#show-translations-btn {
+    background-color: #2196F3;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+#show-translations-btn:hover {
+    background-color: #0b7dda;
+}
+
+#show-translations-btn:active {
+    background-color: #0056b3;
+}
+
 #generate-btn {
     padding: 12px 24px;
     background-color: #4CAF50;
@@ -271,10 +285,11 @@ button:hover {
     color: #888;
 }
 
-#word-list li.found .grid-word-reveal {
+#word-list li .translation-reveal {
     text-decoration: none;
-    font-style: italic;
-    color: #555;
+    font-weight: bold;
+    color: #0066cc;
+    display: none;
 }
 
 @media (max-width: 700px) {

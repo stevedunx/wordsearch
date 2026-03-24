@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const gridDiv = document.getElementById('grid');
     const wordListDiv = document.getElementById('word-list');
     const backToSelectionButton = document.getElementById('back-to-selection');
+    const showTranslationsBtn = document.getElementById('show-translations-btn');
     const languageWindow = document.getElementById('language-window');
     const themeWindow = document.getElementById('theme-window');
     const themeSelect = document.getElementById('theme-select');
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let wordData = [];
     let themeCatalog = [];
     let initialThemeFromUrl = null;
+    let showingTranslations = false;
 
     let wordsLoaded = false;
     let loadedTheme = null;
@@ -190,11 +192,55 @@ document.addEventListener('DOMContentLoaded', function() {
     backToSelectionButton.addEventListener('click', () => {
         document.querySelector('.input-section').style.display = 'block';
         backToSelectionButton.hidden = true;
+        showTranslationsBtn.hidden = true;
         document.title = 'Wordsearch Generator';
         document.querySelector('h1').textContent = 'Language Wordsearch';
         showThemeWindow();
         showDirectionPrompt();
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    function toggleTranslations(show) {
+        showingTranslations = show;
+        const lis = wordListDiv.querySelectorAll('li');
+        lis.forEach(li => {
+            const gridWord = li.dataset.gridWord;
+            let translationSpan = li.querySelector('.translation-reveal');
+            
+            if (show && gridWord && gridWord !== li.textContent) {
+                if (!translationSpan) {
+                    translationSpan = document.createElement('span');
+                    translationSpan.className = 'translation-reveal';
+                    translationSpan.textContent = ` (${gridWord})`;
+                    li.appendChild(translationSpan);
+                }
+                translationSpan.style.display = 'inline';
+            } else if (translationSpan) {
+                translationSpan.style.display = 'none';
+            }
+        });
+    }
+
+    showTranslationsBtn.addEventListener('mousedown', () => {
+        toggleTranslations(true);
+    });
+
+    showTranslationsBtn.addEventListener('mouseup', () => {
+        toggleTranslations(false);
+    });
+
+    showTranslationsBtn.addEventListener('mouseleave', () => {
+        toggleTranslations(false);
+    });
+
+    showTranslationsBtn.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        toggleTranslations(true);
+    });
+
+    showTranslationsBtn.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        toggleTranslations(false);
     });
 
     function showDirectionPrompt() {
@@ -219,7 +265,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 es: item.es ? item.es.toUpperCase() : item.spanish.toUpperCase(),
                 fr: item.fr ? item.fr.toUpperCase() : item.french.toUpperCase(),
                 en: item.en ? item.en.toUpperCase() : item.english.toUpperCase(),
-                kw: item.kw ? item.kw.toUpperCase() : ''
+                kw: item.kw ? item.kw.toUpperCase() : '',
+                br: item.br ? item.br.toUpperCase() : ''
             }));
         } catch (error) {
             console.error('Error loading words:', error);
@@ -255,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function mapLangCodeToField(code) {
         // JSON now uses language code keys directly
-        if (['es', 'fr', 'en', 'kw'].includes(code)) return code;
+        if (['es', 'fr', 'en', 'kw', 'br'].includes(code)) return code;
         return 'fr';
     }
 
@@ -265,6 +312,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'fr': return 'French';
             case 'en': return 'English';
             case 'kw': return 'Cornish';
+            case 'br': return 'Breton';
             default: return 'Unknown';
         }
     }
@@ -388,6 +436,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Hide the input section to focus on the wordsearch
         document.querySelector('.input-section').style.display = 'none';
         backToSelectionButton.hidden = false;
+        showTranslationsBtn.hidden = false;
     }
 
     function createEmptyGrid(size) {
@@ -511,12 +560,6 @@ document.addEventListener('DOMContentLoaded', function() {
             li.dataset.listWord = placement.target;
             if (foundWords.has(placement.source)) {
                 li.classList.add('found');
-                if (placement.gridDisplay !== placement.target) {
-                    const span = document.createElement('span');
-                    span.className = 'grid-word-reveal';
-                    span.textContent = ` (${placement.gridDisplay})`;
-                    li.appendChild(span);
-                }
             }
             ul.appendChild(li);
         });
@@ -748,12 +791,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (foundWords.has(li.dataset.word)) {
                 li.classList.add('found');
                 const gridWord = li.dataset.gridWord;
-                if (gridWord && gridWord !== li.dataset.listWord && !li.querySelector('.grid-word-reveal')) {
-                    const span = document.createElement('span');
-                    span.className = 'grid-word-reveal';
-                    span.textContent = ` (${gridWord})`;
-                    li.appendChild(span);
-                }
             }
         });
     }
