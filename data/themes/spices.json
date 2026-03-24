@@ -1,0 +1,86 @@
+[
+    {
+        "es": "SALT",
+        "fr": "SALT",
+        "en": "SALT",
+        "kw": "SALT",
+        "br": "SALT"
+    },
+    {
+        "es": "SUGAR",
+        "fr": "SUGAR",
+        "en": "SUGAR",
+        "kw": "SUGAR",
+        "br": "SUGAR"
+    },
+    {
+        "es": "APPLE",
+        "fr": "APPLE",
+        "en": "APPLE",
+        "kw": "APPLE",
+        "br": "AVAL"
+    },
+    {
+        "es": "BANANA",
+        "fr": "BANANA",
+        "en": "BANANA",
+        "kw": "BANANA",
+        "br": "BANANN"
+    },
+    {
+        "es": "ORANGE",
+        "fr": "ORANGE",
+        "en": "ORANGE",
+        "kw": "ORANGE",
+        "br": "ORANJ"
+    },
+    {
+        "es": "GRAPE",
+        "fr": "GRAPE",
+        "en": "GRAPE",
+        "kw": "GRAPE",
+        "br": "GRAPE"
+    },
+    {
+        "es": "LEMON",
+        "fr": "LEMON",
+        "en": "LEMON",
+        "kw": "LEMON",
+        "br": "LEMONED"
+    },
+    {
+        "es": "PEAR",
+        "fr": "PEAR",
+        "en": "PEAR",
+        "kw": "PEAR",
+        "br": "PERO"
+    },
+    {
+        "es": "PEACH",
+        "fr": "PEACH",
+        "en": "PEACH",
+        "kw": "PEACH",
+        "br": "PESKAD"
+    },
+    {
+        "es": "CARROT",
+        "fr": "CARROT",
+        "en": "CARROT",
+        "kw": "CARROT",
+        "br": "CARROT"
+    },
+    {
+        "es": "TOMATO",
+        "fr": "TOMATO",
+        "en": "TOMATO",
+        "kw": "TOMATO",
+        "br": "TOMATO"
+    },
+    {
+        "es": "ONION",
+        "fr": "ONION",
+        "en": "ONION",
+        "kw": "ONION",
+        "br": "ONION"
+    }
+]

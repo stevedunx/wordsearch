@@ -1,0 +1,86 @@
+[
+    {
+        "es": "EARTH",
+        "fr": "EARTH",
+        "en": "EARTH",
+        "kw": "EARTH",
+        "br": "EARTH"
+    },
+    {
+        "es": "ENERGY",
+        "fr": "ENERGY",
+        "en": "ENERGY",
+        "kw": "ENERGY",
+        "br": "ENERGY"
+    },
+    {
+        "es": "RECYCLE",
+        "fr": "RECYCLE",
+        "en": "RECYCLE",
+        "kw": "RECYCLE",
+        "br": "RECYCLE"
+    },
+    {
+        "es": "GREEN",
+        "fr": "GREEN",
+        "en": "GREEN",
+        "kw": "GREEN",
+        "br": "GWEZ"
+    },
+    {
+        "es": "PLANET",
+        "fr": "PLANET",
+        "en": "PLANET",
+        "kw": "PLANET",
+        "br": "PLANET"
+    },
+    {
+        "es": "SPACE",
+        "fr": "SPACE",
+        "en": "SPACE",
+        "kw": "SPACE",
+        "br": "SPACE"
+    },
+    {
+        "es": "STAR",
+        "fr": "STAR",
+        "en": "STAR",
+        "kw": "STAR",
+        "br": "STAR"
+    },
+    {
+        "es": "MOON",
+        "fr": "MOON",
+        "en": "MOON",
+        "kw": "MOON",
+        "br": "MOON"
+    },
+    {
+        "es": "SUNLIGHT",
+        "fr": "SUNLIGHT",
+        "en": "SUNLIGHT",
+        "kw": "SUNLIGHT",
+        "br": "SUNLIGHT"
+    },
+    {
+        "es": "GARDEN",
+        "fr": "GARDEN",
+        "en": "GARDEN",
+        "kw": "GARDEN",
+        "br": "GARDEN"
+    },
+    {
+        "es": "NATURE",
+        "fr": "NATURE",
+        "en": "NATURE",
+        "kw": "NATURE",
+        "br": "NATURE"
+    },
+    {
+        "es": "ANIMAL",
+        "fr": "ANIMAL",
+        "en": "ANIMAL",
+        "kw": "ANIMAL",
+        "br": "ANIMAL"
+    }
+]

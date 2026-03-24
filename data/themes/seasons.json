@@ -1,0 +1,86 @@
+[
+    {
+        "es": "BELOW",
+        "fr": "BELOW",
+        "en": "BELOW",
+        "kw": "BELOW",
+        "br": "BELOW"
+    },
+    {
+        "es": "AND",
+        "fr": "AND",
+        "en": "AND",
+        "kw": "AND",
+        "br": "AND"
+    },
+    {
+        "es": "BUT",
+        "fr": "BUT",
+        "en": "BUT",
+        "kw": "BUT",
+        "br": "BUT"
+    },
+    {
+        "es": "BECAUSE",
+        "fr": "BECAUSE",
+        "en": "BECAUSE",
+        "kw": "BECAUSE",
+        "br": "BECAUSE"
+    },
+    {
+        "es": "WITH",
+        "fr": "WITH",
+        "en": "WITH",
+        "kw": "WITH",
+        "br": "WITH"
+    },
+    {
+        "es": "WITHOUT",
+        "fr": "WITHOUT",
+        "en": "WITHOUT",
+        "kw": "WITHOUT",
+        "br": "WITHOUT"
+    },
+    {
+        "es": "BIG",
+        "fr": "BIG",
+        "en": "BIG",
+        "kw": "BIG",
+        "br": "BIG"
+    },
+    {
+        "es": "SMALL",
+        "fr": "SMALL",
+        "en": "SMALL",
+        "kw": "SMALL",
+        "br": "SMALL"
+    },
+    {
+        "es": "FAST",
+        "fr": "FAST",
+        "en": "FAST",
+        "kw": "FAST",
+        "br": "FAST"
+    },
+    {
+        "es": "SLOW",
+        "fr": "SLOW",
+        "en": "SLOW",
+        "kw": "SLOW",
+        "br": "SLOW"
+    },
+    {
+        "es": "OLD",
+        "fr": "OLD",
+        "en": "OLD",
+        "kw": "OLD",
+        "br": "OLD"
+    },
+    {
+        "es": "NEW",
+        "fr": "NEW",
+        "en": "NEW",
+        "kw": "NEW",
+        "br": "NEW"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "es": "PAN",
+        "fr": "PAN",
+        "en": "PAN",
+        "kw": "PAN",
+        "br": "PAN"
+    },
+    {
+        "es": "KNIFE",
+        "fr": "KNIFE",
+        "en": "KNIFE",
+        "kw": "KNIFE",
+        "br": "KNIFE"
+    },
+    {
+        "es": "FORK",
+        "fr": "FORK",
+        "en": "FORK",
+        "kw": "FORK",
+        "br": "FORK"
+    },
+    {
+        "es": "SPOON",
+        "fr": "SPOON",
+        "en": "SPOON",
+        "kw": "SPOON",
+        "br": "SPOON"
+    },
+    {
+        "es": "PLATE",
+        "fr": "PLATE",
+        "en": "PLATE",
+        "kw": "PLATE",
+        "br": "PLATE"
+    },
+    {
+        "es": "CUP",
+        "fr": "CUP",
+        "en": "CUP",
+        "kw": "CUP",
+        "br": "CUP"
+    },
+    {
+        "es": "BOWL",
+        "fr": "BOWL",
+        "en": "BOWL",
+        "kw": "BOWL",
+        "br": "BOWL"
+    },
+    {
+        "es": "MENU",
+        "fr": "MENU",
+        "en": "MENU",
+        "kw": "MENU",
+        "br": "MENU"
+    },
+    {
+        "es": "WAITER",
+        "fr": "WAITER",
+        "en": "WAITER",
+        "kw": "WAITER",
+        "br": "WAITER"
+    },
+    {
+        "es": "RESTAURANT",
+        "fr": "RESTAURANT",
+        "en": "RESTAURANT",
+        "kw": "RESTAURANT",
+        "br": "RESTAURANT"
+    },
+    {
+        "es": "COOK",
+        "fr": "COOK",
+        "en": "COOK",
+        "kw": "COOK",
+        "br": "COOK"
+    },
+    {
+        "es": "BAKE",
+        "fr": "BAKE",
+        "en": "BAKE",
+        "kw": "BAKE",
+        "br": "BAKE"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "es": "HISTORY",
+        "fr": "HISTORY",
+        "en": "HISTORY",
+        "kw": "HISTORY",
+        "br": "HISTORY"
+    },
+    {
+        "es": "GEOGRAPHY",
+        "fr": "GEOGRAPHY",
+        "en": "GEOGRAPHY",
+        "kw": "GEOGRAPHY",
+        "br": "GEOGRAPHY"
+    },
+    {
+        "es": "LANGUAGE",
+        "fr": "LANGUAGE",
+        "en": "LANGUAGE",
+        "kw": "LANGUAGE",
+        "br": "LANGUAGE"
+    },
+    {
+        "es": "ART",
+        "fr": "ART",
+        "en": "ART",
+        "kw": "ART",
+        "br": "ART"
+    },
+    {
+        "es": "MUSIC",
+        "fr": "MUSIC",
+        "en": "MUSIC",
+        "kw": "MUSIC",
+        "br": "MUSIC"
+    },
+    {
+        "es": "READ",
+        "fr": "READ",
+        "en": "READ",
+        "kw": "READ",
+        "br": "READ"
+    },
+    {
+        "es": "WRITE",
+        "fr": "WRITE",
+        "en": "WRITE",
+        "kw": "WRITE",
+        "br": "WRITE"
+    },
+    {
+        "es": "SPELL",
+        "fr": "SPELL",
+        "en": "SPELL",
+        "kw": "SPELL",
+        "br": "SPELL"
+    },
+    {
+        "es": "LISTEN",
+        "fr": "LISTEN",
+        "en": "LISTEN",
+        "kw": "LISTEN",
+        "br": "LISTEN"
+    },
+    {
+        "es": "SPEAK",
+        "fr": "SPEAK",
+        "en": "SPEAK",
+        "kw": "SPEAK",
+        "br": "SPEAK"
+    },
+    {
+        "es": "LEARN",
+        "fr": "LEARN",
+        "en": "LEARN",
+        "kw": "LEARN",
+        "br": "LEARN"
+    },
+    {
+        "es": "STUDY",
+        "fr": "STUDY",
+        "en": "STUDY",
+        "kw": "STUDY",
+        "br": "STUDY"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "es": "SPOON",
+        "fr": "SPOON",
+        "en": "SPOON",
+        "kw": "SPOON",
+        "br": "SPOON"
+    },
+    {
+        "es": "PLATE",
+        "fr": "PLATE",
+        "en": "PLATE",
+        "kw": "PLATE",
+        "br": "PLATE"
+    },
+    {
+        "es": "CUP",
+        "fr": "CUP",
+        "en": "CUP",
+        "kw": "CUP",
+        "br": "CUP"
+    },
+    {
+        "es": "BOWL",
+        "fr": "BOWL",
+        "en": "BOWL",
+        "kw": "BOWL",
+        "br": "BOWL"
+    },
+    {
+        "es": "MENU",
+        "fr": "MENU",
+        "en": "MENU",
+        "kw": "MENU",
+        "br": "MENU"
+    },
+    {
+        "es": "WAITER",
+        "fr": "WAITER",
+        "en": "WAITER",
+        "kw": "WAITER",
+        "br": "WAITER"
+    },
+    {
+        "es": "RESTAURANT",
+        "fr": "RESTAURANT",
+        "en": "RESTAURANT",
+        "kw": "RESTAURANT",
+        "br": "RESTAURANT"
+    },
+    {
+        "es": "COOK",
+        "fr": "COOK",
+        "en": "COOK",
+        "kw": "COOK",
+        "br": "COOK"
+    },
+    {
+        "es": "BAKE",
+        "fr": "BAKE",
+        "en": "BAKE",
+        "kw": "BAKE",
+        "br": "BAKE"
+    },
+    {
+        "es": "FRY",
+        "fr": "FRY",
+        "en": "FRY",
+        "kw": "FRY",
+        "br": "FRY"
+    },
+    {
+        "es": "BREAD",
+        "fr": "BREAD",
+        "en": "BREAD",
+        "kw": "BREAD",
+        "br": "BREAD"
+    },
+    {
+        "es": "CHEESE",
+        "fr": "CHEESE",
+        "en": "CHEESE",
+        "kw": "CHEESE",
+        "br": "CHEESE"
+    }
+]

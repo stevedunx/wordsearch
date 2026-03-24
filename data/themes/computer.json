@@ -1,0 +1,86 @@
+[
+    {
+        "es": "FOLDER",
+        "fr": "FOLDER",
+        "en": "FOLDER",
+        "kw": "FOLDER",
+        "br": "FOLDER"
+    },
+    {
+        "es": "PRINTER",
+        "fr": "PRINTER",
+        "en": "PRINTER",
+        "kw": "PRINTER",
+        "br": "PRINTER"
+    },
+    {
+        "es": "CLOUD",
+        "fr": "CLOUD",
+        "en": "CLOUD",
+        "kw": "CLOUD",
+        "br": "CLOUD"
+    },
+    {
+        "es": "DATA",
+        "fr": "DATA",
+        "en": "DATA",
+        "kw": "DATA",
+        "br": "DATA"
+    },
+    {
+        "es": "SECURITY",
+        "fr": "SECURITY",
+        "en": "SECURITY",
+        "kw": "SECURITY",
+        "br": "SECURITY"
+    },
+    {
+        "es": "TECHNOLOGY",
+        "fr": "TECHNOLOGY",
+        "en": "TECHNOLOGY",
+        "kw": "TECHNOLOGY",
+        "br": "TECHNOLOGY"
+    },
+    {
+        "es": "INTERNET",
+        "fr": "INTERNET",
+        "en": "INTERNET",
+        "kw": "INTERNET",
+        "br": "INTERNET"
+    },
+    {
+        "es": "COMPUTER",
+        "fr": "COMPUTER",
+        "en": "COMPUTER",
+        "kw": "COMPUTER",
+        "br": "COMPUTER"
+    },
+    {
+        "es": "KEYBOARD",
+        "fr": "KEYBOARD",
+        "en": "KEYBOARD",
+        "kw": "KEYBOARD",
+        "br": "KEYBOARD"
+    },
+    {
+        "es": "SCREEN",
+        "fr": "SCREEN",
+        "en": "SCREEN",
+        "kw": "SCREEN",
+        "br": "SCREEN"
+    },
+    {
+        "es": "MOUSE",
+        "fr": "MOUSE",
+        "en": "MOUSE",
+        "kw": "MOUSE",
+        "br": "LOGODENN"
+    },
+    {
+        "es": "LAPTOP",
+        "fr": "LAPTOP",
+        "en": "LAPTOP",
+        "kw": "LAPTOP",
+        "br": "LAPTOP"
+    }
+]

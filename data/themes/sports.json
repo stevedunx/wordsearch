@@ -1,0 +1,86 @@
+[
+    {
+        "es": "POEM",
+        "fr": "POEM",
+        "en": "POEM",
+        "kw": "POEM",
+        "br": "POEM"
+    },
+    {
+        "es": "PHOTO",
+        "fr": "PHOTO",
+        "en": "PHOTO",
+        "kw": "PHOTO",
+        "br": "PHOTO"
+    },
+    {
+        "es": "CAMERA",
+        "fr": "CAMERA",
+        "en": "CAMERA",
+        "kw": "CAMERA",
+        "br": "CAMERA"
+    },
+    {
+        "es": "DANCE",
+        "fr": "DANCE",
+        "en": "DANCE",
+        "kw": "DANCE",
+        "br": "DANCE"
+    },
+    {
+        "es": "THEATER",
+        "fr": "THEATER",
+        "en": "THEATER",
+        "kw": "THEATER",
+        "br": "THEATER"
+    },
+    {
+        "es": "GAME",
+        "fr": "GAME",
+        "en": "GAME",
+        "kw": "GAME",
+        "br": "GAME"
+    },
+    {
+        "es": "PUZZLE",
+        "fr": "PUZZLE",
+        "en": "PUZZLE",
+        "kw": "PUZZLE",
+        "br": "PUZZLE"
+    },
+    {
+        "es": "TRAVEL",
+        "fr": "TRAVEL",
+        "en": "TRAVEL",
+        "kw": "TRAVEL",
+        "br": "TRAVEL"
+    },
+    {
+        "es": "COLLECT",
+        "fr": "COLLECT",
+        "en": "COLLECT",
+        "kw": "COLLECT",
+        "br": "COLLECT"
+    },
+    {
+        "es": "CRAFT",
+        "fr": "CRAFT",
+        "en": "CRAFT",
+        "kw": "CRAFT",
+        "br": "CRAFT"
+    },
+    {
+        "es": "SING",
+        "fr": "SING",
+        "en": "SING",
+        "kw": "SING",
+        "br": "SING"
+    },
+    {
+        "es": "LISTEN",
+        "fr": "LISTEN",
+        "en": "LISTEN",
+        "kw": "LISTEN",
+        "br": "LISTEN"
+    }
+]

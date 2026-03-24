@@ -4,32 +4,31 @@ A static website that generates wordsearch puzzles with vocabulary in multiple l
 
 ## Features
 
-- Multiple themes: Food vocabulary and Family member names
-- Pre-loaded vocabulary words from `food.json` and `family.json` with `es`, `fr`, `en`, and `kw` translations
+- 100 language-learning themes (counting, greetings, colors, school, travel, food, nature, technology, and more)
+- Theme data is organized under `data/themes/` with a catalog file at `data/themes/index.json`
+- Pre-loaded vocabulary words in `es`, `fr`, `en`, and `kw` fields
 - Supports all combinations of grid and word list languages
 - Generates a 12x12 wordsearch grid with words placed in deterministic directions
 - Translation words displayed in the list for lookup
 - Interactive selection: click and drag to find words
-- Visual feedback for found words (highlighted in yellow, struck through in list)
+- Visual feedback for found words and active selections (line overlays in the grid, struck through in list)
 
 ## How to Use
 
 1. Open `index.html` in a web browser
-2. Select a theme: Food or Family Members
-3. Select the language for the grid (where words will be hidden) - `es` is selected by default
-4. The word list language automatically defaults to your browser's language (`es`, `fr`, `en`, or `kw` when available)
-5. Adjust selections as needed, then click the "Load Wordsearch" button to generate the puzzle
-6. The selection form will be hidden and the wordsearch will fill the screen
-7. Click and drag on the grid to select sequences of letters
-8. Find all the word list language words - reference translations are in the list
-9. Found words are highlighted and marked complete
-10. Refresh the page to generate a new wordsearch with different settings
+2. Select the language pair first
+3. Continue to the theme step and choose one of the available themes
+4. Click "Load Wordsearch" to generate the puzzle
+5. The selection form will be hidden and the wordsearch will fill the screen
+6. Click and drag on the grid to select sequences of letters
+7. Find all the word list language words - reference translations are in the list
+8. Found words are marked complete and remembered when returning to the same theme/language combination
 
 ## Adding More Words
 
-Edit the appropriate JSON file to add more word pairs. Each entry should have all four languages:
+Theme files live in `data/themes/`, and each entry should have all four language keys:
 
-### Food words (`food.json`):
+### Example theme file (`data/themes/food.json`):
 ```json
 [
   {
@@ -41,14 +40,13 @@ Edit the appropriate JSON file to add more word pairs. Each entry should have al
 ]
 ```
 
-### Family member words (`family.json`):
+### Theme catalog (`data/themes/index.json`):
 ```json
 [
   {
-    "es": "PADRE",
-    "fr": "PERE",
-    "en": "FATHER",
-    "kw": "TAS"
+    "id": "food",
+    "name": "Food",
+    "file": "food.json"
   }
 ]
 ```
@@ -56,7 +54,7 @@ Edit the appropriate JSON file to add more word pairs. Each entry should have al
 ## Hosting on GitHub Pages
 
 1. Create a new repository on GitHub
-2. Upload these files: `index.html`, `styles.css`, `script.js`, `food.json`, `family.json`
+2. Upload these files: `index.html`, `styles.css`, `script.js`, and the full `data/themes/` folder
 3. Go to repository Settings > Pages
 4. Set source to "Deploy from a branch"
 5. Select "main" branch and "/ (root)" folder

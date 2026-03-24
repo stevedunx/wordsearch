@@ -1,0 +1,86 @@
+[
+    {
+        "es": "MAY",
+        "fr": "MAY",
+        "en": "MAY",
+        "kw": "MAY",
+        "br": "MAY"
+    },
+    {
+        "es": "JUNE",
+        "fr": "JUNE",
+        "en": "JUNE",
+        "kw": "JUNE",
+        "br": "JUNE"
+    },
+    {
+        "es": "JULY",
+        "fr": "JULY",
+        "en": "JULY",
+        "kw": "JULY",
+        "br": "JULY"
+    },
+    {
+        "es": "AUGUST",
+        "fr": "AUGUST",
+        "en": "AUGUST",
+        "kw": "AUGUST",
+        "br": "AUGUST"
+    },
+    {
+        "es": "SEPTEMBER",
+        "fr": "SEPTEMBER",
+        "en": "SEPTEMBER",
+        "kw": "SEPTEMBER",
+        "br": "SEPTEMBER"
+    },
+    {
+        "es": "OCTOBER",
+        "fr": "OCTOBER",
+        "en": "OCTOBER",
+        "kw": "OCTOBER",
+        "br": "OCTOBER"
+    },
+    {
+        "es": "NOVEMBER",
+        "fr": "NOVEMBER",
+        "en": "NOVEMBER",
+        "kw": "NOVEMBER",
+        "br": "NOVEMBER"
+    },
+    {
+        "es": "DECEMBER",
+        "fr": "DECEMBER",
+        "en": "DECEMBER",
+        "kw": "DECEMBER",
+        "br": "DECEMBER"
+    },
+    {
+        "es": "HOT",
+        "fr": "HOT",
+        "en": "HOT",
+        "kw": "HOT",
+        "br": "HOT"
+    },
+    {
+        "es": "COLD",
+        "fr": "COLD",
+        "en": "COLD",
+        "kw": "COLD",
+        "br": "COLD"
+    },
+    {
+        "es": "RAINY",
+        "fr": "RAINY",
+        "en": "RAINY",
+        "kw": "RAINY",
+        "br": "RAINY"
+    },
+    {
+        "es": "SUNNY",
+        "fr": "SUNNY",
+        "en": "SUNNY",
+        "kw": "SUNNY",
+        "br": "SUNNY"
+    }
+]

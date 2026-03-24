@@ -1,0 +1,86 @@
+[
+    {
+        "es": "LOAN",
+        "fr": "LOAN",
+        "en": "LOAN",
+        "kw": "LOAN",
+        "br": "LOAN"
+    },
+    {
+        "es": "POST",
+        "fr": "POST",
+        "en": "POST",
+        "kw": "POST",
+        "br": "POST"
+    },
+    {
+        "es": "LETTER",
+        "fr": "LETTER",
+        "en": "LETTER",
+        "kw": "LETTER",
+        "br": "LETTER"
+    },
+    {
+        "es": "STAMP",
+        "fr": "STAMP",
+        "en": "STAMP",
+        "kw": "STAMP",
+        "br": "STAMP"
+    },
+    {
+        "es": "PACKAGE",
+        "fr": "PACKAGE",
+        "en": "PACKAGE",
+        "kw": "PACKAGE",
+        "br": "PACKAGE"
+    },
+    {
+        "es": "POLICE",
+        "fr": "POLICE",
+        "en": "POLICE",
+        "kw": "POLICE",
+        "br": "POLICE"
+    },
+    {
+        "es": "OFFICER",
+        "fr": "OFFICER",
+        "en": "OFFICER",
+        "kw": "OFFICER",
+        "br": "OFFICER"
+    },
+    {
+        "es": "LAW",
+        "fr": "LAW",
+        "en": "LAW",
+        "kw": "LAW",
+        "br": "LAW"
+    },
+    {
+        "es": "HELP",
+        "fr": "HELP",
+        "en": "HELP",
+        "kw": "HELP",
+        "br": "HELP"
+    },
+    {
+        "es": "DANGER",
+        "fr": "DANGER",
+        "en": "DANGER",
+        "kw": "DANGER",
+        "br": "DANGER"
+    },
+    {
+        "es": "EMERGENCY",
+        "fr": "EMERGENCY",
+        "en": "EMERGENCY",
+        "kw": "EMERGENCY",
+        "br": "EMERGENCY"
+    },
+    {
+        "es": "FIRE",
+        "fr": "FIRE",
+        "en": "FIRE",
+        "kw": "FIRE",
+        "br": "FIRE"
+    }
+]

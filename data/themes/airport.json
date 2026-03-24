@@ -1,0 +1,86 @@
+[
+    {
+        "es": "RIGHT",
+        "fr": "RIGHT",
+        "en": "RIGHT",
+        "kw": "RIGHT",
+        "br": "RIGHT"
+    },
+    {
+        "es": "STRAIGHT",
+        "fr": "STRAIGHT",
+        "en": "STRAIGHT",
+        "kw": "STRAIGHT",
+        "br": "STRAIGHT"
+    },
+    {
+        "es": "STOP",
+        "fr": "STOP",
+        "en": "STOP",
+        "kw": "STOP",
+        "br": "STOP"
+    },
+    {
+        "es": "GO",
+        "fr": "GO",
+        "en": "GO",
+        "kw": "GO",
+        "br": "GO"
+    },
+    {
+        "es": "CITY",
+        "fr": "CITY",
+        "en": "CITY",
+        "kw": "CITY",
+        "br": "CITY"
+    },
+    {
+        "es": "TOWN",
+        "fr": "TOWN",
+        "en": "TOWN",
+        "kw": "TOWN",
+        "br": "TOWN"
+    },
+    {
+        "es": "VILLAGE",
+        "fr": "VILLAGE",
+        "en": "VILLAGE",
+        "kw": "VILLAGE",
+        "br": "VILLAGE"
+    },
+    {
+        "es": "ROAD",
+        "fr": "ROAD",
+        "en": "ROAD",
+        "kw": "ROAD",
+        "br": "ROAD"
+    },
+    {
+        "es": "STREET",
+        "fr": "STREET",
+        "en": "STREET",
+        "kw": "STREET",
+        "br": "STREET"
+    },
+    {
+        "es": "BRIDGE",
+        "fr": "BRIDGE",
+        "en": "BRIDGE",
+        "kw": "BRIDGE",
+        "br": "BRIDGE"
+    },
+    {
+        "es": "STATION",
+        "fr": "STATION",
+        "en": "STATION",
+        "kw": "STATION",
+        "br": "STATION"
+    },
+    {
+        "es": "BUS",
+        "fr": "BUS",
+        "en": "BUS",
+        "kw": "BUS",
+        "br": "BUS"
+    }
+]

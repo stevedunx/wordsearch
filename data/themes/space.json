@@ -1,0 +1,86 @@
+[
+    {
+        "es": "FLOWER",
+        "fr": "FLOWER",
+        "en": "FLOWER",
+        "kw": "FLOWER",
+        "br": "FLOWER"
+    },
+    {
+        "es": "GRASS",
+        "fr": "GRASS",
+        "en": "GRASS",
+        "kw": "GRASS",
+        "br": "GRASS"
+    },
+    {
+        "es": "RAIN",
+        "fr": "RAIN",
+        "en": "RAIN",
+        "kw": "RAIN",
+        "br": "RAIN"
+    },
+    {
+        "es": "SNOW",
+        "fr": "SNOW",
+        "en": "SNOW",
+        "kw": "SNOW",
+        "br": "SNOW"
+    },
+    {
+        "es": "SUN",
+        "fr": "SUN",
+        "en": "SUN",
+        "kw": "SUN",
+        "br": "SUN"
+    },
+    {
+        "es": "WIND",
+        "fr": "WIND",
+        "en": "WIND",
+        "kw": "WIND",
+        "br": "WIND"
+    },
+    {
+        "es": "EARTH",
+        "fr": "EARTH",
+        "en": "EARTH",
+        "kw": "EARTH",
+        "br": "EARTH"
+    },
+    {
+        "es": "ENERGY",
+        "fr": "ENERGY",
+        "en": "ENERGY",
+        "kw": "ENERGY",
+        "br": "ENERGY"
+    },
+    {
+        "es": "RECYCLE",
+        "fr": "RECYCLE",
+        "en": "RECYCLE",
+        "kw": "RECYCLE",
+        "br": "RECYCLE"
+    },
+    {
+        "es": "GREEN",
+        "fr": "GREEN",
+        "en": "GREEN",
+        "kw": "GREEN",
+        "br": "GWEZ"
+    },
+    {
+        "es": "PLANET",
+        "fr": "PLANET",
+        "en": "PLANET",
+        "kw": "PLANET",
+        "br": "PLANET"
+    },
+    {
+        "es": "SPACE",
+        "fr": "SPACE",
+        "en": "SPACE",
+        "kw": "SPACE",
+        "br": "SPACE"
+    }
+]

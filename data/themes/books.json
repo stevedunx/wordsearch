@@ -1,0 +1,86 @@
+[
+    {
+        "es": "QUESTION",
+        "fr": "QUESTION",
+        "en": "QUESTION",
+        "kw": "QUESTION",
+        "br": "QUESTION"
+    },
+    {
+        "es": "ANSWER",
+        "fr": "ANSWER",
+        "en": "ANSWER",
+        "kw": "ANSWER",
+        "br": "ANSWER"
+    },
+    {
+        "es": "PROJECT",
+        "fr": "PROJECT",
+        "en": "PROJECT",
+        "kw": "PROJECT",
+        "br": "PROJECT"
+    },
+    {
+        "es": "UNIVERSITY",
+        "fr": "UNIVERSITY",
+        "en": "UNIVERSITY",
+        "kw": "UNIVERSITY",
+        "br": "UNIVERSITY"
+    },
+    {
+        "es": "COLLEGE",
+        "fr": "COLLEGE",
+        "en": "COLLEGE",
+        "kw": "COLLEGE",
+        "br": "COLLEGE"
+    },
+    {
+        "es": "LECTURE",
+        "fr": "LECTURE",
+        "en": "LECTURE",
+        "kw": "LECTURE",
+        "br": "LECTURE"
+    },
+    {
+        "es": "COURSE",
+        "fr": "COURSE",
+        "en": "COURSE",
+        "kw": "COURSE",
+        "br": "COURSE"
+    },
+    {
+        "es": "TEST",
+        "fr": "TEST",
+        "en": "TEST",
+        "kw": "TEST",
+        "br": "TEST"
+    },
+    {
+        "es": "TEACHER",
+        "fr": "TEACHER",
+        "en": "TEACHER",
+        "kw": "TEACHER",
+        "br": "TEACHER"
+    },
+    {
+        "es": "STUDENT",
+        "fr": "STUDENT",
+        "en": "STUDENT",
+        "kw": "STUDENT",
+        "br": "STUDENT"
+    },
+    {
+        "es": "CLASS",
+        "fr": "CLASS",
+        "en": "CLASS",
+        "kw": "CLASS",
+        "br": "CLASS"
+    },
+    {
+        "es": "SCHOOL",
+        "fr": "SCHOOL",
+        "en": "SCHOOL",
+        "kw": "SCHOOL",
+        "br": "SCHOOL"
+    }
+]

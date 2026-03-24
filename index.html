@@ -19,6 +19,7 @@
                         <label><input type="radio" name="grid-lang" value="fr"> French</label>
                         <label><input type="radio" name="grid-lang" value="en"> English</label>
                         <label><input type="radio" name="grid-lang" value="kw"> Cornish</label>
+                        <label><input type="radio" name="grid-lang" value="br"> Breton</label>
                     </div>
                     <div class="column">
                         <h4>Word List Language:</h4>
@@ -26,6 +27,7 @@
                         <label><input type="radio" name="list-lang" value="fr"> French</label>
                         <label><input type="radio" name="list-lang" value="en"> English</label>
                         <label><input type="radio" name="list-lang" value="kw"> Cornish</label>
+                        <label><input type="radio" name="list-lang" value="br"> Breton</label>
                     </div>
                 </div>
                 <div class="button-section">
@@ -37,8 +39,10 @@
                 <p>Select a theme for this language pair.</p>
                 <div class="theme-selection">
                     <h4>Theme:</h4>
-                    <label><input type="radio" name="theme" value="food"> Food</label>
-                    <label><input type="radio" name="theme" value="family"> Family Members</label>
+                    <label for="theme-select">Choose a theme:</label>
+                    <select id="theme-select">
+                        <option value="">Select a theme</option>
+                    </select>
                 </div>
                 <div class="button-section theme-buttons">
                     <button id="back-to-language-btn" type="button">Back to Language Pair</button>

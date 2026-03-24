@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const backToSelectionButton = document.getElementById('back-to-selection');
     const languageWindow = document.getElementById('language-window');
     const themeWindow = document.getElementById('theme-window');
+    const themeSelect = document.getElementById('theme-select');
     const toThemeButton = document.getElementById('to-theme-btn');
     const backToLanguageButton = document.getElementById('back-to-language-btn');
     const generateButton = document.getElementById('generate-btn');
     const directionNote = document.getElementById('direction-note');
-    const themeRadios = document.querySelectorAll('input[name="theme"]');
     const gridLangRadios = document.querySelectorAll('input[name="grid-lang"]');
     const listLangRadios = document.querySelectorAll('input[name="list-lang"]');
 
@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let startCell = null;
     let currentSelection = [];
     let wordData = [];
+    let themeCatalog = [];
+    let initialThemeFromUrl = null;
 
     let wordsLoaded = false;
     let loadedTheme = null;
@@ -44,15 +46,36 @@ document.addEventListener('DOMContentLoaded', function() {
         window.history.replaceState({}, '', newUrl);
     }
 
+    function normalizeThemeId(themeId) {
+        if (themeId === 'family') return 'relatives';
+        return themeId;
+    }
+
+    function setThemeOptions(catalog) {
+        themeSelect.innerHTML = '<option value="">Select a theme</option>';
+        // Temporarily show only food and relatives for translation checking
+        const visibleThemes = catalog.filter(theme => ['food', 'relatives'].includes(theme.id));
+        visibleThemes.forEach(theme => {
+            const option = document.createElement('option');
+            option.value = theme.id;
+            option.textContent = theme.name;
+            themeSelect.appendChild(option);
+        });
+    }
+
+    async function loadThemeCatalog() {
+        const response = await fetch('data/themes/index.json');
+        if (!response.ok) {
+            throw new Error('Unable to load theme catalog');
+        }
+        themeCatalog = await response.json();
+        setThemeOptions(themeCatalog);
+    }
+
     function applyUrlSettings() {
         const { theme, grid, list } = getUrlParams();
-        const validThemes = ['food', 'family'];
-        const validLangs = ['es', 'fr', 'en', 'kw'];
-
-        if (validThemes.includes(theme)) {
-            const themeRadio = document.querySelector(`input[name="theme"][value="${theme}"]`);
-            if (themeRadio) themeRadio.checked = true;
-        }
+        const validLangs = ['es', 'fr', 'en', 'kw', 'br'];
+        initialThemeFromUrl = normalizeThemeId(theme);
 
         if (validLangs.includes(grid)) {
             const gridRadio = document.querySelector(`input[name="grid-lang"][value="${grid}"]`);
@@ -83,31 +106,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
     applyUrlSettings();
 
+    const initialParams = getUrlParams();
+    const hasLanguagePairInUrl = Boolean(initialParams.grid && initialParams.list);
+
     if (!getCurrentListLanguage()) setDefaultListLanguage();
 
-    const initialParams = getUrlParams();
-    if (initialParams.grid && initialParams.list) {
-        showThemeWindow();
-        updateUrlParams(null, getCurrentGridLanguage(), getCurrentListLanguage());
-    } else {
-        showLanguageWindow();
-    }
     showDirectionPrompt();
 
-    // Auto-generate only when full URL state is present
-    if (initialParams.theme && initialParams.grid && initialParams.list) {
-        loadWords(initialParams.theme).then(() => {
-            wordsLoaded = true;
-            loadedTheme = initialParams.theme;
-            generateWordsearch();
-        });
-    }
+    loadThemeCatalog().then(() => {
+        if (initialThemeFromUrl && themeCatalog.some(theme => theme.id === initialThemeFromUrl)) {
+            themeSelect.value = initialThemeFromUrl;
+        }
 
-    themeRadios.forEach(radio => radio.addEventListener('change', () => {
+        if (hasLanguagePairInUrl || (initialThemeFromUrl && hasLanguagePairSelected())) {
+            showThemeWindow();
+            if (initialThemeFromUrl && themeSelect.value === initialThemeFromUrl) {
+                updateUrlParams(initialThemeFromUrl, getCurrentGridLanguage(), getCurrentListLanguage());
+                loadWords(initialThemeFromUrl).then(() => {
+                    wordsLoaded = true;
+                    loadedTheme = initialThemeFromUrl;
+                    generateWordsearch();
+                });
+            } else if (hasLanguagePairInUrl) {
+                updateUrlParams(null, getCurrentGridLanguage(), getCurrentListLanguage());
+            } else {
+                showLanguageWindow();
+            }
+        } else {
+            showLanguageWindow();
+        }
+    }).catch(error => {
+        console.error('Error loading theme catalog:', error);
+        directionNote.textContent = 'Unable to load themes. Please refresh the page.';
+    });
+
+    themeSelect.addEventListener('change', () => {
         updateUrlParams(getCurrentTheme(), getCurrentGridLanguage(), getCurrentListLanguage());
         wordsLoaded = false;
         loadedTheme = null;
-    }));
+    });
+
     gridLangRadios.forEach(radio => radio.addEventListener('change', () => {
         updateUrlParams(null, getCurrentGridLanguage(), getCurrentListLanguage());
     }));
@@ -165,8 +203,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function loadWords(themeOverride = null) {
-        const theme = themeOverride || getCurrentTheme() || 'food';
-        const fileName = theme === 'family' ? 'family.json' : 'food.json';
+        const theme = normalizeThemeId(themeOverride || getCurrentTheme());
+        if (!theme) {
+            wordData = [];
+            return;
+        }
+
+        const fileName = `data/themes/${theme}.json`;
 
         try {
             const response = await fetch(fileName);
@@ -231,8 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function getCurrentTheme() {
-        const selected = document.querySelector('input[name="theme"]:checked');
-        return selected ? selected.value : null;
+        return themeSelect.value || null;
     }
 
     function getCurrentGridLanguage() {
@@ -273,7 +315,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const gridLang = getCurrentGridLanguage();
         const listLang = getCurrentListLanguage();
         const note = document.getElementById('direction-note');
-        const theme = getCurrentTheme();
+        const theme = normalizeThemeId(getCurrentTheme());
 
         // If no languages selected, require selection
         if (!gridLang || !listLang) {
@@ -293,7 +335,8 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        const themeName = theme === 'family' ? 'Family Members' : 'Food';
+        const themeMeta = themeCatalog.find(item => item.id === theme);
+        const themeName = themeMeta ? themeMeta.name : theme;
         const directionText = `${getLanguageDisplayName(listLang)} → ${getLanguageDisplayName(gridLang)} — ${themeName}`;
         note.textContent = 'Direction set to ' + directionText + '.';
 

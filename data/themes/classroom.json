@@ -1,0 +1,86 @@
+[
+    {
+        "es": "GRADE",
+        "fr": "GRADE",
+        "en": "GRADE",
+        "kw": "GRADE",
+        "br": "GRADE"
+    },
+    {
+        "es": "NOTEBOOK",
+        "fr": "NOTEBOOK",
+        "en": "NOTEBOOK",
+        "kw": "NOTEBOOK",
+        "br": "NOTEBOOK"
+    },
+    {
+        "es": "PENCIL",
+        "fr": "PENCIL",
+        "en": "PENCIL",
+        "kw": "PENCIL",
+        "br": "PENCIL"
+    },
+    {
+        "es": "PEN",
+        "fr": "PEN",
+        "en": "PEN",
+        "kw": "PEN",
+        "br": "PEN"
+    },
+    {
+        "es": "ERASER",
+        "fr": "ERASER",
+        "en": "ERASER",
+        "kw": "ERASER",
+        "br": "ERASER"
+    },
+    {
+        "es": "RULER",
+        "fr": "RULER",
+        "en": "RULER",
+        "kw": "RULER",
+        "br": "RULER"
+    },
+    {
+        "es": "BOARD",
+        "fr": "BOARD",
+        "en": "BOARD",
+        "kw": "BOARD",
+        "br": "BOARD"
+    },
+    {
+        "es": "DESK",
+        "fr": "DESK",
+        "en": "DESK",
+        "kw": "DESK",
+        "br": "DESK"
+    },
+    {
+        "es": "CHAIR",
+        "fr": "CHAIR",
+        "en": "CHAIR",
+        "kw": "CHAIR",
+        "br": "CHAIR"
+    },
+    {
+        "es": "BOOK",
+        "fr": "BOOK",
+        "en": "BOOK",
+        "kw": "BOOK",
+        "br": "BOOK"
+    },
+    {
+        "es": "LIBRARY",
+        "fr": "LIBRARY",
+        "en": "LIBRARY",
+        "kw": "LIBRARY",
+        "br": "LIBRARY"
+    },
+    {
+        "es": "SCIENCE",
+        "fr": "SCIENCE",
+        "en": "SCIENCE",
+        "kw": "SCIENCE",
+        "br": "SCIENCE"
+    }
+]

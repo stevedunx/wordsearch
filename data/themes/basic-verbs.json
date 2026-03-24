@@ -1,0 +1,86 @@
+[
+    {
+        "es": "HOT",
+        "fr": "HOT",
+        "en": "HOT",
+        "kw": "HOT",
+        "br": "HOT"
+    },
+    {
+        "es": "COLD",
+        "fr": "COLD",
+        "en": "COLD",
+        "kw": "COLD",
+        "br": "COLD"
+    },
+    {
+        "es": "RAINY",
+        "fr": "RAINY",
+        "en": "RAINY",
+        "kw": "RAINY",
+        "br": "RAINY"
+    },
+    {
+        "es": "SUNNY",
+        "fr": "SUNNY",
+        "en": "SUNNY",
+        "kw": "SUNNY",
+        "br": "SUNNY"
+    },
+    {
+        "es": "CLOUDY",
+        "fr": "CLOUDY",
+        "en": "CLOUDY",
+        "kw": "CLOUDY",
+        "br": "CLOUDY"
+    },
+    {
+        "es": "WINDY",
+        "fr": "WINDY",
+        "en": "WINDY",
+        "kw": "WINDY",
+        "br": "WINDY"
+    },
+    {
+        "es": "EARLY",
+        "fr": "EARLY",
+        "en": "EARLY",
+        "kw": "EARLY",
+        "br": "EARLY"
+    },
+    {
+        "es": "LATE",
+        "fr": "LATE",
+        "en": "LATE",
+        "kw": "LATE",
+        "br": "LATE"
+    },
+    {
+        "es": "FIRST",
+        "fr": "FIRST",
+        "en": "FIRST",
+        "kw": "FIRST",
+        "br": "FIRST"
+    },
+    {
+        "es": "SECOND",
+        "fr": "SECOND",
+        "en": "SECOND",
+        "kw": "SECOND",
+        "br": "SECOND"
+    },
+    {
+        "es": "THIRD",
+        "fr": "THIRD",
+        "en": "THIRD",
+        "kw": "THIRD",
+        "br": "THIRD"
+    },
+    {
+        "es": "BEFORE",
+        "fr": "BEFORE",
+        "en": "BEFORE",
+        "kw": "BEFORE",
+        "br": "BEFORE"
+    }
+]

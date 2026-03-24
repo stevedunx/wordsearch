@@ -1,0 +1,86 @@
+[
+    {
+        "es": "WALL",
+        "fr": "WALL",
+        "en": "WALL",
+        "kw": "WALL",
+        "br": "WALL"
+    },
+    {
+        "es": "FLOOR",
+        "fr": "FLOOR",
+        "en": "FLOOR",
+        "kw": "FLOOR",
+        "br": "FLOOR"
+    },
+    {
+        "es": "CEILING",
+        "fr": "CEILING",
+        "en": "CEILING",
+        "kw": "CEILING",
+        "br": "CEILING"
+    },
+    {
+        "es": "TABLE",
+        "fr": "TABLE",
+        "en": "TABLE",
+        "kw": "TABLE",
+        "br": "TABLE"
+    },
+    {
+        "es": "CHAIR",
+        "fr": "CHAIR",
+        "en": "CHAIR",
+        "kw": "CHAIR",
+        "br": "CHAIR"
+    },
+    {
+        "es": "SOFA",
+        "fr": "SOFA",
+        "en": "SOFA",
+        "kw": "SOFA",
+        "br": "SOFA"
+    },
+    {
+        "es": "BED",
+        "fr": "BED",
+        "en": "BED",
+        "kw": "BED",
+        "br": "BED"
+    },
+    {
+        "es": "LAMP",
+        "fr": "LAMP",
+        "en": "LAMP",
+        "kw": "LAMP",
+        "br": "LAMP"
+    },
+    {
+        "es": "MIRROR",
+        "fr": "MIRROR",
+        "en": "MIRROR",
+        "kw": "MIRROR",
+        "br": "MIRROR"
+    },
+    {
+        "es": "CARPET",
+        "fr": "CARPET",
+        "en": "CARPET",
+        "kw": "CARPET",
+        "br": "CARPET"
+    },
+    {
+        "es": "SHELF",
+        "fr": "SHELF",
+        "en": "SHELF",
+        "kw": "SHELF",
+        "br": "SHELF"
+    },
+    {
+        "es": "WARDROBE",
+        "fr": "WARDROBE",
+        "en": "WARDROBE",
+        "kw": "WARDROBE",
+        "br": "WARDROBE"
+    }
+]

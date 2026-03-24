@@ -1,0 +1,93 @@
+[
+    {
+        "es": "MANZANA",
+        "fr": "POMME",
+        "en": "Apple",
+        "kw": "AVAL",
+        "br": "AVAL"
+    },
+    {
+        "es": "PLATANO",
+        "fr": "BANANE",
+        "en": "Banana",
+        "kw": "BANONEN",
+        "br": "BANANN"
+    },
+    {
+        "es": "UVAS",
+        "fr": "RAISINS",
+        "en": "Grapes",
+        "kw": "DRAYEN",
+        "br": "DRAJENN"
+    },
+    {
+        "es": "NARANJA",
+        "fr": "ORANGE",
+        "en": "Orange",
+        "kw": "ORANZH",
+        "br": "ORANJ"
+    },
+    {
+        "es": "FRESA",
+        "fr": "FRAISE",
+        "en": "Strawberry",
+        "kw": "STER",
+        "br": "MEZBLED"
+    },
+    {
+        "es": "ARANDANO",
+        "fr": "MYRTILLE",
+        "en": "Blueberry",
+        "kw": "BLUEBERRY",
+        "br": "DELVEZ"
+    },
+    {
+        "es": "SANDIA",
+        "fr": "PASTEQUE",
+        "en": "Watermelon",
+        "kw": "MELLIONEN",
+        "br": "MELONMOR"
+    },
+    {
+        "es": "MELOCOTON",
+        "fr": "PECHE",
+        "en": "Peach",
+        "kw": "PESCHEN",
+        "br": "PESKAD"
+    },
+    {
+        "es": "LIMON",
+        "fr": "CITRON",
+        "en": "Lemon",
+        "kw": "LEMM",
+        "br": "LEMONED"
+    },
+    {
+        "es": "PERA",
+        "fr": "POIRE",
+        "en": "Pear",
+        "kw": "PEER",
+        "br": "PERO"
+    },
+    {
+        "es": "PINA",
+        "fr": "ANANAS",
+        "en": "Pineapple",
+        "kw": "ANANAZ",
+        "br": "PRUÑSTI"
+    },
+    {
+        "es": "FRAMBUESA",
+        "fr": "FRAMBOISE",
+        "en": "Raspberry",
+        "kw": "FRAMWOSEN",
+        "br": "MEZRUZ"
+    },
+    {
+        "es": "MANGO",
+        "fr": "MANGUE",
+        "en": "Mango",
+        "kw": "MANGO",
+        "br": "MANGO"
+    }
+]

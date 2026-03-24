@@ -1,0 +1,86 @@
+[
+    {
+        "es": "COMPUTER",
+        "fr": "COMPUTER",
+        "en": "COMPUTER",
+        "kw": "COMPUTER",
+        "br": "COMPUTER"
+    },
+    {
+        "es": "KEYBOARD",
+        "fr": "KEYBOARD",
+        "en": "KEYBOARD",
+        "kw": "KEYBOARD",
+        "br": "KEYBOARD"
+    },
+    {
+        "es": "SCREEN",
+        "fr": "SCREEN",
+        "en": "SCREEN",
+        "kw": "SCREEN",
+        "br": "SCREEN"
+    },
+    {
+        "es": "MOUSE",
+        "fr": "MOUSE",
+        "en": "MOUSE",
+        "kw": "MOUSE",
+        "br": "LOGODENN"
+    },
+    {
+        "es": "LAPTOP",
+        "fr": "LAPTOP",
+        "en": "LAPTOP",
+        "kw": "LAPTOP",
+        "br": "LAPTOP"
+    },
+    {
+        "es": "TABLET",
+        "fr": "TABLET",
+        "en": "TABLET",
+        "kw": "TABLET",
+        "br": "TABLET"
+    },
+    {
+        "es": "PHONE",
+        "fr": "PHONE",
+        "en": "PHONE",
+        "kw": "PHONE",
+        "br": "PHONE"
+    },
+    {
+        "es": "MESSAGE",
+        "fr": "MESSAGE",
+        "en": "MESSAGE",
+        "kw": "MESSAGE",
+        "br": "MESSAGE"
+    },
+    {
+        "es": "EMAIL",
+        "fr": "EMAIL",
+        "en": "EMAIL",
+        "kw": "EMAIL",
+        "br": "EMAIL"
+    },
+    {
+        "es": "WEBSITE",
+        "fr": "WEBSITE",
+        "en": "WEBSITE",
+        "kw": "WEBSITE",
+        "br": "WEBSITE"
+    },
+    {
+        "es": "BROWSER",
+        "fr": "BROWSER",
+        "en": "BROWSER",
+        "kw": "BROWSER",
+        "br": "BROWSER"
+    },
+    {
+        "es": "SEARCH",
+        "fr": "SEARCH",
+        "en": "SEARCH",
+        "kw": "SEARCH",
+        "br": "SEARCH"
+    }
+]

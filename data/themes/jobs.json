@@ -1,0 +1,86 @@
+[
+    {
+        "es": "TOOTH",
+        "fr": "TOOTH",
+        "en": "TOOTH",
+        "kw": "TOOTH",
+        "br": "TOOTH"
+    },
+    {
+        "es": "HEALTH",
+        "fr": "HEALTH",
+        "en": "HEALTH",
+        "kw": "HEALTH",
+        "br": "HEALTH"
+    },
+    {
+        "es": "PAIN",
+        "fr": "PAIN",
+        "en": "PAIN",
+        "kw": "PAIN",
+        "br": "PAIN"
+    },
+    {
+        "es": "FEVER",
+        "fr": "FEVER",
+        "en": "FEVER",
+        "kw": "FEVER",
+        "br": "FEVER"
+    },
+    {
+        "es": "COUGH",
+        "fr": "COUGH",
+        "en": "COUGH",
+        "kw": "COUGH",
+        "br": "COUGH"
+    },
+    {
+        "es": "DOCTOR",
+        "fr": "DOCTOR",
+        "en": "DOCTOR",
+        "kw": "DOCTOR",
+        "br": "DOCTOR"
+    },
+    {
+        "es": "NURSE",
+        "fr": "NURSE",
+        "en": "NURSE",
+        "kw": "NURSE",
+        "br": "NURSE"
+    },
+    {
+        "es": "HOSPITAL",
+        "fr": "HOSPITAL",
+        "en": "HOSPITAL",
+        "kw": "HOSPITAL",
+        "br": "HOSPITAL"
+    },
+    {
+        "es": "MEDICINE",
+        "fr": "MEDICINE",
+        "en": "MEDICINE",
+        "kw": "MEDICINE",
+        "br": "MEDICINE"
+    },
+    {
+        "es": "HAPPY",
+        "fr": "HAPPY",
+        "en": "HAPPY",
+        "kw": "HAPPY",
+        "br": "HAPPY"
+    },
+    {
+        "es": "SAD",
+        "fr": "SAD",
+        "en": "SAD",
+        "kw": "SAD",
+        "br": "SAD"
+    },
+    {
+        "es": "ANGRY",
+        "fr": "ANGRY",
+        "en": "ANGRY",
+        "kw": "ANGRY",
+        "br": "ANGRY"
+    }
+]

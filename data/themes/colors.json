@@ -1,0 +1,86 @@
+[
+    {
+        "es": "ONE",
+        "fr": "ONE",
+        "en": "ONE",
+        "kw": "ONE",
+        "br": "UNAN"
+    },
+    {
+        "es": "TWO",
+        "fr": "TWO",
+        "en": "TWO",
+        "kw": "TWO",
+        "br": "DAOU"
+    },
+    {
+        "es": "THREE",
+        "fr": "THREE",
+        "en": "THREE",
+        "kw": "THREE",
+        "br": "TRI"
+    },
+    {
+        "es": "FOUR",
+        "fr": "FOUR",
+        "en": "FOUR",
+        "kw": "FOUR",
+        "br": "PEVAR"
+    },
+    {
+        "es": "FIVE",
+        "fr": "FIVE",
+        "en": "FIVE",
+        "kw": "FIVE",
+        "br": "PEMP"
+    },
+    {
+        "es": "SIX",
+        "fr": "SIX",
+        "en": "SIX",
+        "kw": "SIX",
+        "br": "CHWECH"
+    },
+    {
+        "es": "SEVEN",
+        "fr": "SEVEN",
+        "en": "SEVEN",
+        "kw": "SEVEN",
+        "br": "SEIZH"
+    },
+    {
+        "es": "EIGHT",
+        "fr": "EIGHT",
+        "en": "EIGHT",
+        "kw": "EIGHT",
+        "br": "EIZH"
+    },
+    {
+        "es": "NINE",
+        "fr": "NINE",
+        "en": "NINE",
+        "kw": "NINE",
+        "br": "NAW"
+    },
+    {
+        "es": "TEN",
+        "fr": "TEN",
+        "en": "TEN",
+        "kw": "TEN",
+        "br": "DEK"
+    },
+    {
+        "es": "HELLO",
+        "fr": "HELLO",
+        "en": "HELLO",
+        "kw": "HELLO",
+        "br": "HELLO"
+    },
+    {
+        "es": "GOODBYE",
+        "fr": "GOODBYE",
+        "en": "GOODBYE",
+        "kw": "GOODBYE",
+        "br": "GOODBYE"
+    }
+]

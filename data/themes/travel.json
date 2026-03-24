@@ -1,0 +1,86 @@
+[
+    {
+        "es": "JOURNEY",
+        "fr": "JOURNEY",
+        "en": "JOURNEY",
+        "kw": "JOURNEY",
+        "br": "JOURNEY"
+    },
+    {
+        "es": "MOUNTAIN",
+        "fr": "MOUNTAIN",
+        "en": "MOUNTAIN",
+        "kw": "MOUNTAIN",
+        "br": "MOUNTAIN"
+    },
+    {
+        "es": "BEACH",
+        "fr": "BEACH",
+        "en": "BEACH",
+        "kw": "BEACH",
+        "br": "BEACH"
+    },
+    {
+        "es": "TRAVEL",
+        "fr": "TRAVEL",
+        "en": "TRAVEL",
+        "kw": "TRAVEL",
+        "br": "TRAVEL"
+    },
+    {
+        "es": "TRIP",
+        "fr": "TRIP",
+        "en": "TRIP",
+        "kw": "TRIP",
+        "br": "TRIP"
+    },
+    {
+        "es": "TICKET",
+        "fr": "TICKET",
+        "en": "TICKET",
+        "kw": "TICKET",
+        "br": "TICKET"
+    },
+    {
+        "es": "PASSPORT",
+        "fr": "PASSPORT",
+        "en": "PASSPORT",
+        "kw": "PASSPORT",
+        "br": "PASSPORT"
+    },
+    {
+        "es": "MAP",
+        "fr": "MAP",
+        "en": "MAP",
+        "kw": "MAP",
+        "br": "MAP"
+    },
+    {
+        "es": "DIRECTION",
+        "fr": "DIRECTION",
+        "en": "DIRECTION",
+        "kw": "DIRECTION",
+        "br": "DIRECTION"
+    },
+    {
+        "es": "LEFT",
+        "fr": "LEFT",
+        "en": "LEFT",
+        "kw": "LEFT",
+        "br": "LEFT"
+    },
+    {
+        "es": "RIGHT",
+        "fr": "RIGHT",
+        "en": "RIGHT",
+        "kw": "RIGHT",
+        "br": "RIGHT"
+    },
+    {
+        "es": "STRAIGHT",
+        "fr": "STRAIGHT",
+        "en": "STRAIGHT",
+        "kw": "STRAIGHT",
+        "br": "STRAIGHT"
+    }
+]

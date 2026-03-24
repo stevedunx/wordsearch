@@ -1,0 +1,86 @@
+[
+    {
+        "es": "NINE",
+        "fr": "NINE",
+        "en": "NINE",
+        "kw": "NINE",
+        "br": "NAW"
+    },
+    {
+        "es": "TEN",
+        "fr": "TEN",
+        "en": "TEN",
+        "kw": "TEN",
+        "br": "DEK"
+    },
+    {
+        "es": "HELLO",
+        "fr": "HELLO",
+        "en": "HELLO",
+        "kw": "HELLO",
+        "br": "HELLO"
+    },
+    {
+        "es": "GOODBYE",
+        "fr": "GOODBYE",
+        "en": "GOODBYE",
+        "kw": "GOODBYE",
+        "br": "GOODBYE"
+    },
+    {
+        "es": "PLEASE",
+        "fr": "PLEASE",
+        "en": "PLEASE",
+        "kw": "PLEASE",
+        "br": "PLEASE"
+    },
+    {
+        "es": "THANKYOU",
+        "fr": "THANKYOU",
+        "en": "THANKYOU",
+        "kw": "THANKYOU",
+        "br": "THANKYOU"
+    },
+    {
+        "es": "YES",
+        "fr": "YES",
+        "en": "YES",
+        "kw": "YES",
+        "br": "YES"
+    },
+    {
+        "es": "NO",
+        "fr": "NO",
+        "en": "NO",
+        "kw": "NO",
+        "br": "NO"
+    },
+    {
+        "es": "TODAY",
+        "fr": "TODAY",
+        "en": "TODAY",
+        "kw": "TODAY",
+        "br": "TODAY"
+    },
+    {
+        "es": "TOMORROW",
+        "fr": "TOMORROW",
+        "en": "TOMORROW",
+        "kw": "TOMORROW",
+        "br": "TOMORROW"
+    },
+    {
+        "es": "YESTERDAY",
+        "fr": "YESTERDAY",
+        "en": "YESTERDAY",
+        "kw": "YESTERDAY",
+        "br": "YESTERDAY"
+    },
+    {
+        "es": "MORNING",
+        "fr": "MORNING",
+        "en": "MORNING",
+        "kw": "MORNING",
+        "br": "MORNING"
+    }
+]

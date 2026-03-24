@@ -1,0 +1,86 @@
+[
+    {
+        "es": "CLEAN",
+        "fr": "CLEAN",
+        "en": "CLEAN",
+        "kw": "CLEAN",
+        "br": "CLEAN"
+    },
+    {
+        "es": "WASH",
+        "fr": "WASH",
+        "en": "WASH",
+        "kw": "WASH",
+        "br": "WASH"
+    },
+    {
+        "es": "SWEEP",
+        "fr": "SWEEP",
+        "en": "SWEEP",
+        "kw": "SWEEP",
+        "br": "SWEEP"
+    },
+    {
+        "es": "MOP",
+        "fr": "MOP",
+        "en": "MOP",
+        "kw": "MOP",
+        "br": "MOP"
+    },
+    {
+        "es": "COOK",
+        "fr": "COOK",
+        "en": "COOK",
+        "kw": "COOK",
+        "br": "COOK"
+    },
+    {
+        "es": "FAMILY",
+        "fr": "FAMILY",
+        "en": "FAMILY",
+        "kw": "FAMILY",
+        "br": "FAMILY"
+    },
+    {
+        "es": "PARENT",
+        "fr": "PARENT",
+        "en": "PARENT",
+        "kw": "PARENT",
+        "br": "PARENT"
+    },
+    {
+        "es": "CHILD",
+        "fr": "CHILD",
+        "en": "CHILD",
+        "kw": "CHILD",
+        "br": "CHILD"
+    },
+    {
+        "es": "BROTHER",
+        "fr": "BROTHER",
+        "en": "BROTHER",
+        "kw": "BROTHER",
+        "br": "BROTHER"
+    },
+    {
+        "es": "SISTER",
+        "fr": "SISTER",
+        "en": "SISTER",
+        "kw": "SISTER",
+        "br": "SISTER"
+    },
+    {
+        "es": "GRANDFATHER",
+        "fr": "GRANDFATHER",
+        "en": "GRANDFATHER",
+        "kw": "GRANDFATHER",
+        "br": "GRANDFATHER"
+    },
+    {
+        "es": "GRANDMOTHER",
+        "fr": "GRANDMOTHER",
+        "en": "GRANDMOTHER",
+        "kw": "GRANDMOTHER",
+        "br": "GRANDMOTHER"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "es": "LATE",
+        "fr": "LATE",
+        "en": "LATE",
+        "kw": "LATE",
+        "br": "LATE"
+    },
+    {
+        "es": "FIRST",
+        "fr": "FIRST",
+        "en": "FIRST",
+        "kw": "FIRST",
+        "br": "FIRST"
+    },
+    {
+        "es": "SECOND",
+        "fr": "SECOND",
+        "en": "SECOND",
+        "kw": "SECOND",
+        "br": "SECOND"
+    },
+    {
+        "es": "THIRD",
+        "fr": "THIRD",
+        "en": "THIRD",
+        "kw": "THIRD",
+        "br": "THIRD"
+    },
+    {
+        "es": "BEFORE",
+        "fr": "BEFORE",
+        "en": "BEFORE",
+        "kw": "BEFORE",
+        "br": "BEFORE"
+    },
+    {
+        "es": "AFTER",
+        "fr": "AFTER",
+        "en": "AFTER",
+        "kw": "AFTER",
+        "br": "AFTER"
+    },
+    {
+        "es": "BETWEEN",
+        "fr": "BETWEEN",
+        "en": "BETWEEN",
+        "kw": "BETWEEN",
+        "br": "BETWEEN"
+    },
+    {
+        "es": "NEAR",
+        "fr": "NEAR",
+        "en": "NEAR",
+        "kw": "NEAR",
+        "br": "NEAR"
+    },
+    {
+        "es": "FAR",
+        "fr": "FAR",
+        "en": "FAR",
+        "kw": "FAR",
+        "br": "FAR"
+    },
+    {
+        "es": "ABOVE",
+        "fr": "ABOVE",
+        "en": "ABOVE",
+        "kw": "ABOVE",
+        "br": "ABOVE"
+    },
+    {
+        "es": "BELOW",
+        "fr": "BELOW",
+        "en": "BELOW",
+        "kw": "BELOW",
+        "br": "BELOW"
+    },
+    {
+        "es": "AND",
+        "fr": "AND",
+        "en": "AND",
+        "kw": "AND",
+        "br": "AND"
+    }
+]

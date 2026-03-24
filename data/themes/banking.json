@@ -1,0 +1,86 @@
+[
+    {
+        "es": "CHEAP",
+        "fr": "CHEAP",
+        "en": "CHEAP",
+        "kw": "CHEAP",
+        "br": "CHEAP"
+    },
+    {
+        "es": "EXPENSIVE",
+        "fr": "EXPENSIVE",
+        "en": "EXPENSIVE",
+        "kw": "EXPENSIVE",
+        "br": "EXPENSIVE"
+    },
+    {
+        "es": "MONEY",
+        "fr": "MONEY",
+        "en": "MONEY",
+        "kw": "MONEY",
+        "br": "MONEY"
+    },
+    {
+        "es": "CASH",
+        "fr": "CASH",
+        "en": "CASH",
+        "kw": "CASH",
+        "br": "CASH"
+    },
+    {
+        "es": "CARD",
+        "fr": "CARD",
+        "en": "CARD",
+        "kw": "CARD",
+        "br": "CARD"
+    },
+    {
+        "es": "BANK",
+        "fr": "BANK",
+        "en": "BANK",
+        "kw": "BANK",
+        "br": "BANK"
+    },
+    {
+        "es": "ACCOUNT",
+        "fr": "ACCOUNT",
+        "en": "ACCOUNT",
+        "kw": "ACCOUNT",
+        "br": "ACCOUNT"
+    },
+    {
+        "es": "LOAN",
+        "fr": "LOAN",
+        "en": "LOAN",
+        "kw": "LOAN",
+        "br": "LOAN"
+    },
+    {
+        "es": "POST",
+        "fr": "POST",
+        "en": "POST",
+        "kw": "POST",
+        "br": "POST"
+    },
+    {
+        "es": "LETTER",
+        "fr": "LETTER",
+        "en": "LETTER",
+        "kw": "LETTER",
+        "br": "LETTER"
+    },
+    {
+        "es": "STAMP",
+        "fr": "STAMP",
+        "en": "STAMP",
+        "kw": "STAMP",
+        "br": "STAMP"
+    },
+    {
+        "es": "PACKAGE",
+        "fr": "PACKAGE",
+        "en": "PACKAGE",
+        "kw": "PACKAGE",
+        "br": "PACKAGE"
+    }
+]

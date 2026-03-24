@@ -1,0 +1,86 @@
+[
+    {
+        "es": "AMBULANCE",
+        "fr": "AMBULANCE",
+        "en": "AMBULANCE",
+        "kw": "AMBULANCE",
+        "br": "AMBULANCE"
+    },
+    {
+        "es": "HOSPITAL",
+        "fr": "HOSPITAL",
+        "en": "HOSPITAL",
+        "kw": "HOSPITAL",
+        "br": "HOSPITAL"
+    },
+    {
+        "es": "PHONE",
+        "fr": "PHONE",
+        "en": "PHONE",
+        "kw": "PHONE",
+        "br": "PHONE"
+    },
+    {
+        "es": "CALL",
+        "fr": "CALL",
+        "en": "CALL",
+        "kw": "CALL",
+        "br": "CALL"
+    },
+    {
+        "es": "NUMBER",
+        "fr": "NUMBER",
+        "en": "NUMBER",
+        "kw": "NUMBER",
+        "br": "NUMBER"
+    },
+    {
+        "es": "REPORT",
+        "fr": "REPORT",
+        "en": "REPORT",
+        "kw": "REPORT",
+        "br": "REPORT"
+    },
+    {
+        "es": "SAFE",
+        "fr": "SAFE",
+        "en": "SAFE",
+        "kw": "SAFE",
+        "br": "SAFE"
+    },
+    {
+        "es": "OPEN",
+        "fr": "OPEN",
+        "en": "OPEN",
+        "kw": "OPEN",
+        "br": "OPEN"
+    },
+    {
+        "es": "CLOSED",
+        "fr": "CLOSED",
+        "en": "CLOSED",
+        "kw": "CLOSED",
+        "br": "CLOSED"
+    },
+    {
+        "es": "SHOP",
+        "fr": "SHOP",
+        "en": "SHOP",
+        "kw": "SHOP",
+        "br": "SHOP"
+    },
+    {
+        "es": "STORE",
+        "fr": "STORE",
+        "en": "STORE",
+        "kw": "STORE",
+        "br": "STORE"
+    },
+    {
+        "es": "MARKET",
+        "fr": "MARKET",
+        "en": "MARKET",
+        "kw": "MARKET",
+        "br": "MARKET"
+    }
+]

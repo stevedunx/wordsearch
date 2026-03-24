@@ -1,0 +1,86 @@
+[
+    {
+        "es": "POTATO",
+        "fr": "POTATO",
+        "en": "POTATO",
+        "kw": "POTATO",
+        "br": "POTATO"
+    },
+    {
+        "es": "BEAN",
+        "fr": "BEAN",
+        "en": "BEAN",
+        "kw": "BEAN",
+        "br": "BEAN"
+    },
+    {
+        "es": "RICE",
+        "fr": "RICE",
+        "en": "RICE",
+        "kw": "RICE",
+        "br": "RICE"
+    },
+    {
+        "es": "PASTA",
+        "fr": "PASTA",
+        "en": "PASTA",
+        "kw": "PASTA",
+        "br": "PASTA"
+    },
+    {
+        "es": "SOUP",
+        "fr": "SOUP",
+        "en": "SOUP",
+        "kw": "SOUP",
+        "br": "SOUP"
+    },
+    {
+        "es": "SALAD",
+        "fr": "SALAD",
+        "en": "SALAD",
+        "kw": "SALAD",
+        "br": "SALAD"
+    },
+    {
+        "es": "BREAKFAST",
+        "fr": "BREAKFAST",
+        "en": "BREAKFAST",
+        "kw": "BREAKFAST",
+        "br": "BREAKFAST"
+    },
+    {
+        "es": "LUNCH",
+        "fr": "LUNCH",
+        "en": "LUNCH",
+        "kw": "LUNCH",
+        "br": "LUNCH"
+    },
+    {
+        "es": "DINNER",
+        "fr": "DINNER",
+        "en": "DINNER",
+        "kw": "DINNER",
+        "br": "DINNER"
+    },
+    {
+        "es": "SNACK",
+        "fr": "SNACK",
+        "en": "SNACK",
+        "kw": "SNACK",
+        "br": "SNACK"
+    },
+    {
+        "es": "SPICE",
+        "fr": "SPICE",
+        "en": "SPICE",
+        "kw": "SPICE",
+        "br": "SPICE"
+    },
+    {
+        "es": "PEPPER",
+        "fr": "PEPPER",
+        "en": "PEPPER",
+        "kw": "PEPPER",
+        "br": "PEPPER"
+    }
+]

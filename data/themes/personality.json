@@ -1,0 +1,86 @@
+[
+    {
+        "es": "COUGH",
+        "fr": "COUGH",
+        "en": "COUGH",
+        "kw": "COUGH",
+        "br": "COUGH"
+    },
+    {
+        "es": "DOCTOR",
+        "fr": "DOCTOR",
+        "en": "DOCTOR",
+        "kw": "DOCTOR",
+        "br": "DOCTOR"
+    },
+    {
+        "es": "NURSE",
+        "fr": "NURSE",
+        "en": "NURSE",
+        "kw": "NURSE",
+        "br": "NURSE"
+    },
+    {
+        "es": "HOSPITAL",
+        "fr": "HOSPITAL",
+        "en": "HOSPITAL",
+        "kw": "HOSPITAL",
+        "br": "HOSPITAL"
+    },
+    {
+        "es": "MEDICINE",
+        "fr": "MEDICINE",
+        "en": "MEDICINE",
+        "kw": "MEDICINE",
+        "br": "MEDICINE"
+    },
+    {
+        "es": "HAPPY",
+        "fr": "HAPPY",
+        "en": "HAPPY",
+        "kw": "HAPPY",
+        "br": "HAPPY"
+    },
+    {
+        "es": "SAD",
+        "fr": "SAD",
+        "en": "SAD",
+        "kw": "SAD",
+        "br": "SAD"
+    },
+    {
+        "es": "ANGRY",
+        "fr": "ANGRY",
+        "en": "ANGRY",
+        "kw": "ANGRY",
+        "br": "ANGRY"
+    },
+    {
+        "es": "CALM",
+        "fr": "CALM",
+        "en": "CALM",
+        "kw": "CALM",
+        "br": "CALM"
+    },
+    {
+        "es": "KIND",
+        "fr": "KIND",
+        "en": "KIND",
+        "kw": "KIND",
+        "br": "KIND"
+    },
+    {
+        "es": "SHY",
+        "fr": "SHY",
+        "en": "SHY",
+        "kw": "SHY",
+        "br": "SHY"
+    },
+    {
+        "es": "BRAVE",
+        "fr": "BRAVE",
+        "en": "BRAVE",
+        "kw": "BRAVE",
+        "br": "BRAVE"
+    }
+]

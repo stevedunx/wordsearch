@@ -1,0 +1,86 @@
+[
+    {
+        "es": "SHOE",
+        "fr": "SHOE",
+        "en": "SHOE",
+        "kw": "SHOE",
+        "br": "SHOE"
+    },
+    {
+        "es": "SOCK",
+        "fr": "SOCK",
+        "en": "SOCK",
+        "kw": "SOCK",
+        "br": "SOCK"
+    },
+    {
+        "es": "BELT",
+        "fr": "BELT",
+        "en": "BELT",
+        "kw": "BELT",
+        "br": "BELT"
+    },
+    {
+        "es": "BODY",
+        "fr": "BODY",
+        "en": "BODY",
+        "kw": "BODY",
+        "br": "BODY"
+    },
+    {
+        "es": "HEAD",
+        "fr": "HEAD",
+        "en": "HEAD",
+        "kw": "HEAD",
+        "br": "HEAD"
+    },
+    {
+        "es": "ARM",
+        "fr": "ARM",
+        "en": "ARM",
+        "kw": "ARM",
+        "br": "ARM"
+    },
+    {
+        "es": "HAND",
+        "fr": "HAND",
+        "en": "HAND",
+        "kw": "HAND",
+        "br": "HAND"
+    },
+    {
+        "es": "LEG",
+        "fr": "LEG",
+        "en": "LEG",
+        "kw": "LEG",
+        "br": "LEG"
+    },
+    {
+        "es": "FOOT",
+        "fr": "FOOT",
+        "en": "FOOT",
+        "kw": "FOOT",
+        "br": "FOOT"
+    },
+    {
+        "es": "EYE",
+        "fr": "EYE",
+        "en": "EYE",
+        "kw": "EYE",
+        "br": "EYE"
+    },
+    {
+        "es": "EAR",
+        "fr": "EAR",
+        "en": "EAR",
+        "kw": "EAR",
+        "br": "EAR"
+    },
+    {
+        "es": "NOSE",
+        "fr": "NOSE",
+        "en": "NOSE",
+        "kw": "NOSE",
+        "br": "NOSE"
+    }
+]

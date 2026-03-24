@@ -1,0 +1,86 @@
+[
+    {
+        "es": "BEAR",
+        "fr": "BEAR",
+        "en": "BEAR",
+        "kw": "BEAR",
+        "br": "ARZH"
+    },
+    {
+        "es": "WOLF",
+        "fr": "WOLF",
+        "en": "WOLF",
+        "kw": "WOLF",
+        "br": "BLEIZ"
+    },
+    {
+        "es": "FOX",
+        "fr": "FOX",
+        "en": "FOX",
+        "kw": "FOX",
+        "br": "LOUARN"
+    },
+    {
+        "es": "RABBIT",
+        "fr": "RABBIT",
+        "en": "RABBIT",
+        "kw": "RABBIT",
+        "br": "LOGOD"
+    },
+    {
+        "es": "INSECT",
+        "fr": "INSECT",
+        "en": "INSECT",
+        "kw": "INSECT",
+        "br": "INSECT"
+    },
+    {
+        "es": "BEE",
+        "fr": "BEE",
+        "en": "BEE",
+        "kw": "BEE",
+        "br": "BEE"
+    },
+    {
+        "es": "ANT",
+        "fr": "ANT",
+        "en": "ANT",
+        "kw": "ANT",
+        "br": "ANT"
+    },
+    {
+        "es": "BUTTERFLY",
+        "fr": "BUTTERFLY",
+        "en": "BUTTERFLY",
+        "kw": "BUTTERFLY",
+        "br": "BUTTERFLY"
+    },
+    {
+        "es": "SEA",
+        "fr": "SEA",
+        "en": "SEA",
+        "kw": "SEA",
+        "br": "SEA"
+    },
+    {
+        "es": "OCEAN",
+        "fr": "OCEAN",
+        "en": "OCEAN",
+        "kw": "OCEAN",
+        "br": "OCEAN"
+    },
+    {
+        "es": "BEACH",
+        "fr": "BEACH",
+        "en": "BEACH",
+        "kw": "BEACH",
+        "br": "BEACH"
+    },
+    {
+        "es": "SAND",
+        "fr": "SAND",
+        "en": "SAND",
+        "kw": "SAND",
+        "br": "SAND"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "es": "PAINT",
+        "fr": "PAINT",
+        "en": "PAINT",
+        "kw": "PAINT",
+        "br": "PAINT"
+    },
+    {
+        "es": "DRAW",
+        "fr": "DRAW",
+        "en": "DRAW",
+        "kw": "DRAW",
+        "br": "DRAW"
+    },
+    {
+        "es": "CINEMA",
+        "fr": "CINEMA",
+        "en": "CINEMA",
+        "kw": "CINEMA",
+        "br": "CINEMA"
+    },
+    {
+        "es": "FILM",
+        "fr": "FILM",
+        "en": "FILM",
+        "kw": "FILM",
+        "br": "FILM"
+    },
+    {
+        "es": "ACTOR",
+        "fr": "ACTOR",
+        "en": "ACTOR",
+        "kw": "ACTOR",
+        "br": "ACTOR"
+    },
+    {
+        "es": "READ",
+        "fr": "READ",
+        "en": "READ",
+        "kw": "READ",
+        "br": "READ"
+    },
+    {
+        "es": "BOOK",
+        "fr": "BOOK",
+        "en": "BOOK",
+        "kw": "BOOK",
+        "br": "BOOK"
+    },
+    {
+        "es": "WRITE",
+        "fr": "WRITE",
+        "en": "WRITE",
+        "kw": "WRITE",
+        "br": "WRITE"
+    },
+    {
+        "es": "STORY",
+        "fr": "STORY",
+        "en": "STORY",
+        "kw": "STORY",
+        "br": "STORY"
+    },
+    {
+        "es": "POEM",
+        "fr": "POEM",
+        "en": "POEM",
+        "kw": "POEM",
+        "br": "POEM"
+    },
+    {
+        "es": "PHOTO",
+        "fr": "PHOTO",
+        "en": "PHOTO",
+        "kw": "PHOTO",
+        "br": "PHOTO"
+    },
+    {
+        "es": "CAMERA",
+        "fr": "CAMERA",
+        "en": "CAMERA",
+        "kw": "CAMERA",
+        "br": "CAMERA"
+    }
+]

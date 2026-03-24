@@ -1,0 +1,86 @@
+[
+    {
+        "es": "OFFICE",
+        "fr": "OFFICE",
+        "en": "OFFICE",
+        "kw": "OFFICE",
+        "br": "OFFICE"
+    },
+    {
+        "es": "MANAGER",
+        "fr": "MANAGER",
+        "en": "MANAGER",
+        "kw": "MANAGER",
+        "br": "MANAGER"
+    },
+    {
+        "es": "ENGINEER",
+        "fr": "ENGINEER",
+        "en": "ENGINEER",
+        "kw": "ENGINEER",
+        "br": "ENGINEER"
+    },
+    {
+        "es": "TEACHER",
+        "fr": "TEACHER",
+        "en": "TEACHER",
+        "kw": "TEACHER",
+        "br": "TEACHER"
+    },
+    {
+        "es": "CHEF",
+        "fr": "CHEF",
+        "en": "CHEF",
+        "kw": "CHEF",
+        "br": "CHEF"
+    },
+    {
+        "es": "SHIRT",
+        "fr": "SHIRT",
+        "en": "SHIRT",
+        "kw": "SHIRT",
+        "br": "SHIRT"
+    },
+    {
+        "es": "PANTS",
+        "fr": "PANTS",
+        "en": "PANTS",
+        "kw": "PANTS",
+        "br": "PANTS"
+    },
+    {
+        "es": "DRESS",
+        "fr": "DRESS",
+        "en": "DRESS",
+        "kw": "DRESS",
+        "br": "DRESS"
+    },
+    {
+        "es": "JACKET",
+        "fr": "JACKET",
+        "en": "JACKET",
+        "kw": "JACKET",
+        "br": "JACKET"
+    },
+    {
+        "es": "HAT",
+        "fr": "HAT",
+        "en": "HAT",
+        "kw": "HAT",
+        "br": "HAT"
+    },
+    {
+        "es": "GLOVE",
+        "fr": "GLOVE",
+        "en": "GLOVE",
+        "kw": "GLOVE",
+        "br": "GLOVE"
+    },
+    {
+        "es": "SCARF",
+        "fr": "SCARF",
+        "en": "SCARF",
+        "kw": "SCARF",
+        "br": "SCARF"
+    }
+]

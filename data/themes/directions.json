@@ -1,0 +1,86 @@
+[
+    {
+        "es": "STREET",
+        "fr": "STREET",
+        "en": "STREET",
+        "kw": "STREET",
+        "br": "STREET"
+    },
+    {
+        "es": "BRIDGE",
+        "fr": "BRIDGE",
+        "en": "BRIDGE",
+        "kw": "BRIDGE",
+        "br": "BRIDGE"
+    },
+    {
+        "es": "STATION",
+        "fr": "STATION",
+        "en": "STATION",
+        "kw": "STATION",
+        "br": "STATION"
+    },
+    {
+        "es": "BUS",
+        "fr": "BUS",
+        "en": "BUS",
+        "kw": "BUS",
+        "br": "BUS"
+    },
+    {
+        "es": "TRAIN",
+        "fr": "TRAIN",
+        "en": "TRAIN",
+        "kw": "TRAIN",
+        "br": "TRAIN"
+    },
+    {
+        "es": "CAR",
+        "fr": "CAR",
+        "en": "CAR",
+        "kw": "CAR",
+        "br": "CAR"
+    },
+    {
+        "es": "BIKE",
+        "fr": "BIKE",
+        "en": "BIKE",
+        "kw": "BIKE",
+        "br": "BIKE"
+    },
+    {
+        "es": "AIRPORT",
+        "fr": "AIRPORT",
+        "en": "AIRPORT",
+        "kw": "AIRPORT",
+        "br": "AIRPORT"
+    },
+    {
+        "es": "PLANE",
+        "fr": "PLANE",
+        "en": "PLANE",
+        "kw": "PLANE",
+        "br": "PLANE"
+    },
+    {
+        "es": "HOTEL",
+        "fr": "HOTEL",
+        "en": "HOTEL",
+        "kw": "HOTEL",
+        "br": "HOTEL"
+    },
+    {
+        "es": "ROOM",
+        "fr": "ROOM",
+        "en": "ROOM",
+        "kw": "ROOM",
+        "br": "ROOM"
+    },
+    {
+        "es": "RECEPTION",
+        "fr": "RECEPTION",
+        "en": "RECEPTION",
+        "kw": "RECEPTION",
+        "br": "RECEPTION"
+    }
+]

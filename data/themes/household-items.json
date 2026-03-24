@@ -1,0 +1,86 @@
+[
+    {
+        "es": "COUSIN",
+        "fr": "COUSIN",
+        "en": "COUSIN",
+        "kw": "COUSIN",
+        "br": "COUSIN"
+    },
+    {
+        "es": "MORNING",
+        "fr": "MORNING",
+        "en": "MORNING",
+        "kw": "MORNING",
+        "br": "MORNING"
+    },
+    {
+        "es": "EVENING",
+        "fr": "EVENING",
+        "en": "EVENING",
+        "kw": "EVENING",
+        "br": "EVENING"
+    },
+    {
+        "es": "WAKEUP",
+        "fr": "WAKEUP",
+        "en": "WAKEUP",
+        "kw": "WAKEUP",
+        "br": "WAKEUP"
+    },
+    {
+        "es": "SLEEPTIME",
+        "fr": "SLEEPTIME",
+        "en": "SLEEPTIME",
+        "kw": "SLEEPTIME",
+        "br": "SLEEPTIME"
+    },
+    {
+        "es": "HOUSE",
+        "fr": "HOUSE",
+        "en": "HOUSE",
+        "kw": "HOUSE",
+        "br": "HOUSE"
+    },
+    {
+        "es": "HOME",
+        "fr": "HOME",
+        "en": "HOME",
+        "kw": "HOME",
+        "br": "HOME"
+    },
+    {
+        "es": "ROOM",
+        "fr": "ROOM",
+        "en": "ROOM",
+        "kw": "ROOM",
+        "br": "ROOM"
+    },
+    {
+        "es": "KITCHEN",
+        "fr": "KITCHEN",
+        "en": "KITCHEN",
+        "kw": "KITCHEN",
+        "br": "KITCHEN"
+    },
+    {
+        "es": "BEDROOM",
+        "fr": "BEDROOM",
+        "en": "BEDROOM",
+        "kw": "BEDROOM",
+        "br": "BEDROOM"
+    },
+    {
+        "es": "BATHROOM",
+        "fr": "BATHROOM",
+        "en": "BATHROOM",
+        "kw": "BATHROOM",
+        "br": "BATHROOM"
+    },
+    {
+        "es": "LIVINGROOM",
+        "fr": "LIVINGROOM",
+        "en": "LIVINGROOM",
+        "kw": "LIVINGROOM",
+        "br": "LIVINGROOM"
+    }
+]

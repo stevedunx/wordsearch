@@ -1,0 +1,86 @@
+[
+    {
+        "es": "COOK",
+        "fr": "COOK",
+        "en": "COOK",
+        "kw": "COOK",
+        "br": "COOK"
+    },
+    {
+        "es": "FAMILY",
+        "fr": "FAMILY",
+        "en": "FAMILY",
+        "kw": "FAMILY",
+        "br": "FAMILY"
+    },
+    {
+        "es": "PARENT",
+        "fr": "PARENT",
+        "en": "PARENT",
+        "kw": "PARENT",
+        "br": "PARENT"
+    },
+    {
+        "es": "CHILD",
+        "fr": "CHILD",
+        "en": "CHILD",
+        "kw": "CHILD",
+        "br": "CHILD"
+    },
+    {
+        "es": "BROTHER",
+        "fr": "BROTHER",
+        "en": "BROTHER",
+        "kw": "BROTHER",
+        "br": "BROTHER"
+    },
+    {
+        "es": "SISTER",
+        "fr": "SISTER",
+        "en": "SISTER",
+        "kw": "SISTER",
+        "br": "SISTER"
+    },
+    {
+        "es": "GRANDFATHER",
+        "fr": "GRANDFATHER",
+        "en": "GRANDFATHER",
+        "kw": "GRANDFATHER",
+        "br": "GRANDFATHER"
+    },
+    {
+        "es": "GRANDMOTHER",
+        "fr": "GRANDMOTHER",
+        "en": "GRANDMOTHER",
+        "kw": "GRANDMOTHER",
+        "br": "GRANDMOTHER"
+    },
+    {
+        "es": "UNCLE",
+        "fr": "UNCLE",
+        "en": "UNCLE",
+        "kw": "UNCLE",
+        "br": "UNCLE"
+    },
+    {
+        "es": "AUNT",
+        "fr": "AUNT",
+        "en": "AUNT",
+        "kw": "AUNT",
+        "br": "AUNT"
+    },
+    {
+        "es": "COUSIN",
+        "fr": "COUSIN",
+        "en": "COUSIN",
+        "kw": "COUSIN",
+        "br": "COUSIN"
+    },
+    {
+        "es": "MORNING",
+        "fr": "MORNING",
+        "en": "MORNING",
+        "kw": "MORNING",
+        "br": "MORNING"
+    }
+]

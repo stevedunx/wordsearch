@@ -1,0 +1,86 @@
+[
+    {
+        "es": "DINNER",
+        "fr": "DINNER",
+        "en": "DINNER",
+        "kw": "DINNER",
+        "br": "DINNER"
+    },
+    {
+        "es": "SNACK",
+        "fr": "SNACK",
+        "en": "SNACK",
+        "kw": "SNACK",
+        "br": "SNACK"
+    },
+    {
+        "es": "SPICE",
+        "fr": "SPICE",
+        "en": "SPICE",
+        "kw": "SPICE",
+        "br": "SPICE"
+    },
+    {
+        "es": "PEPPER",
+        "fr": "PEPPER",
+        "en": "PEPPER",
+        "kw": "PEPPER",
+        "br": "PEPPER"
+    },
+    {
+        "es": "GARLIC",
+        "fr": "GARLIC",
+        "en": "GARLIC",
+        "kw": "GARLIC",
+        "br": "GARLIC"
+    },
+    {
+        "es": "BUTTER",
+        "fr": "BUTTER",
+        "en": "BUTTER",
+        "kw": "BUTTER",
+        "br": "BUTTER"
+    },
+    {
+        "es": "EGG",
+        "fr": "EGG",
+        "en": "EGG",
+        "kw": "EGG",
+        "br": "EGG"
+    },
+    {
+        "es": "FLOUR",
+        "fr": "FLOUR",
+        "en": "FLOUR",
+        "kw": "FLOUR",
+        "br": "FLOUR"
+    },
+    {
+        "es": "OVEN",
+        "fr": "OVEN",
+        "en": "OVEN",
+        "kw": "OVEN",
+        "br": "OVEN"
+    },
+    {
+        "es": "PAN",
+        "fr": "PAN",
+        "en": "PAN",
+        "kw": "PAN",
+        "br": "PAN"
+    },
+    {
+        "es": "KNIFE",
+        "fr": "KNIFE",
+        "en": "KNIFE",
+        "kw": "KNIFE",
+        "br": "KNIFE"
+    },
+    {
+        "es": "FORK",
+        "fr": "FORK",
+        "en": "FORK",
+        "kw": "FORK",
+        "br": "FORK"
+    }
+]

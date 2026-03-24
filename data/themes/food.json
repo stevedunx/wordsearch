@@ -1,0 +1,107 @@
+[
+    {
+        "es": "PAN",
+        "fr": "PAIN",
+        "en": "Bread",
+        "kw": "BARA",
+        "br": "BARA"
+    },
+    {
+        "es": "QUESO",
+        "fr": "FROMAGE",
+        "en": "Cheese",
+        "kw": "KEUS",
+        "br": "KEUS"
+    },
+    {
+        "es": "CARNE",
+        "fr": "VIANDE",
+        "en": "Meat",
+        "kw": "KIG",
+        "br": "KIG"
+    },
+    {
+        "es": "PESCADO",
+        "fr": "POISSON",
+        "en": "Fish",
+        "kw": "PYSK",
+        "br": "PESK"
+    },
+    {
+        "es": "VERDURAS",
+        "fr": "LÉGUMES",
+        "en": "Vegetables",
+        "kw": "LYSOW",
+        "br": "LOUZOÙ"
+    },
+    {
+        "es": "FRUTA",
+        "fr": "FRUIT",
+        "en": "Fruit",
+        "kw": "FRUT",
+        "br": "FROUEZH"
+    },
+    {
+        "es": "AGUA",
+        "fr": "EAU",
+        "en": "Water",
+        "kw": "DOWR",
+        "br": "DOUR"
+    },
+    {
+        "es": "VINO",
+        "fr": "VIN",
+        "en": "Wine",
+        "kw": "GWIN",
+        "br": "GWIN"
+    },
+    {
+        "es": "CAFÉ",
+        "fr": "CAFÉ",
+        "en": "Coffee",
+        "kw": "KOFFI",
+        "br": "KAFE"
+    },
+    {
+        "es": "TÉ",
+        "fr": "THÉ",
+        "en": "Tea",
+        "kw": "TE",
+        "br": "TI"
+    },
+    {
+        "es": "HUEVO",
+        "fr": "OEUF",
+        "en": "Egg",
+        "kw": "OY",
+        "br": "OY"
+    },
+    {
+        "es": "LECHE",
+        "fr": "LAIT",
+        "en": "Milk",
+        "kw": "LETH",
+        "br": "LAEZH"
+    },
+    {
+        "es": "MANTEQUILLA",
+        "fr": "BEURRE",
+        "en": "Butter",
+        "kw": "AMANYN",
+        "br": "STER"
+    },
+    {
+        "es": "AZÃšCAR",
+        "fr": "SUCRE",
+        "en": "Sugar",
+        "kw": "SUGRA",
+        "br": "SUKR"
+    },
+    {
+        "es": "SAL",
+        "fr": "SEL",
+        "en": "Salt",
+        "kw": "SALLA",
+        "br": "HAÑS"
+    }
+]

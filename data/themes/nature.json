@@ -1,0 +1,86 @@
+[
+    {
+        "es": "GARDEN",
+        "fr": "GARDEN",
+        "en": "GARDEN",
+        "kw": "GARDEN",
+        "br": "GARDEN"
+    },
+    {
+        "es": "NATURE",
+        "fr": "NATURE",
+        "en": "NATURE",
+        "kw": "NATURE",
+        "br": "NATURE"
+    },
+    {
+        "es": "ANIMAL",
+        "fr": "ANIMAL",
+        "en": "ANIMAL",
+        "kw": "ANIMAL",
+        "br": "ANIMAL"
+    },
+    {
+        "es": "PET",
+        "fr": "PET",
+        "en": "PET",
+        "kw": "PET",
+        "br": "PET"
+    },
+    {
+        "es": "DOG",
+        "fr": "DOG",
+        "en": "DOG",
+        "kw": "DOG",
+        "br": "KISTIN"
+    },
+    {
+        "es": "CAT",
+        "fr": "CAT",
+        "en": "CAT",
+        "kw": "CAT",
+        "br": "KACH"
+    },
+    {
+        "es": "BIRD",
+        "fr": "BIRD",
+        "en": "BIRD",
+        "kw": "BIRD",
+        "br": "EVN"
+    },
+    {
+        "es": "FISH",
+        "fr": "FISH",
+        "en": "FISH",
+        "kw": "FISH",
+        "br": "PESK"
+    },
+    {
+        "es": "HORSE",
+        "fr": "HORSE",
+        "en": "HORSE",
+        "kw": "HORSE",
+        "br": "MARCH"
+    },
+    {
+        "es": "COW",
+        "fr": "COW",
+        "en": "COW",
+        "kw": "COW",
+        "br": "BUOCH"
+    },
+    {
+        "es": "SHEEP",
+        "fr": "SHEEP",
+        "en": "SHEEP",
+        "kw": "SHEEP",
+        "br": "DAÑVAD"
+    },
+    {
+        "es": "GOAT",
+        "fr": "GOAT",
+        "en": "GOAT",
+        "kw": "GOAT",
+        "br": "GOAT"
+    }
+]

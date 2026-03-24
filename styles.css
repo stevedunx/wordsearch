@@ -49,6 +49,17 @@ h1 {
     font-weight: normal;
 }
 
+#theme-select {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
 .language-selection {
     display: flex;
     gap: 40px;

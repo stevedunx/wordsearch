@@ -1,0 +1,86 @@
+[
+    {
+        "es": "PADRE",
+        "fr": "PERE",
+        "en": "Father",
+        "kw": "TAS",
+        "br": "TAD"
+    },
+    {
+        "es": "MADRE",
+        "fr": "MERE",
+        "en": "Mother",
+        "kw": "MAMM",
+        "br": "MAM"
+    },
+    {
+        "es": "HIJO",
+        "fr": "FILS",
+        "en": "Son",
+        "kw": "MAB",
+        "br": "MAP"
+    },
+    {
+        "es": "HIJA",
+        "fr": "FILLE",
+        "en": "Daughter",
+        "kw": "MERGH",
+        "br": "MERC'H"
+    },
+    {
+        "es": "HERMANO",
+        "fr": "FRERE",
+        "en": "Brother",
+        "kw": "BRODER",
+        "br": "BREUDEUR"
+    },
+    {
+        "es": "HERMANA",
+        "fr": "SOEUR",
+        "en": "Sister",
+        "kw": "HWOR",
+        "br": "C'HOAR"
+    },
+    {
+        "es": "ABUELO",
+        "fr": "GRANDPERE",
+        "en": "Grandfather",
+        "kw": "TAS GWYNN",
+        "br": "TAD-KOZH"
+    },
+    {
+        "es": "ABUELA",
+        "fr": "GRANDMERE",
+        "en": "Grandmother",
+        "kw": "MAMM WYNN",
+        "br": "MAMM-KOZH"
+    },
+    {
+        "es": "TIO",
+        "fr": "ONCLE",
+        "en": "Uncle",
+        "kw": "EWNTER",
+        "br": "EONTR"
+    },
+    {
+        "es": "TIA",
+        "fr": "TANTE",
+        "en": "Aunt",
+        "kw": "MODREP",
+        "br": "TANTE"
+    },
+    {
+        "es": "PRIMO",
+        "fr": "COUSIN",
+        "en": "Cousin",
+        "kw": "KENDEROW",
+        "br": "KUZIN"
+    },
+    {
+        "es": "PRIMA",
+        "fr": "COUSINE",
+        "en": "Cousin",
+        "kw": "KENDEROW",
+        "br": "KUZIN"
+    }
+]

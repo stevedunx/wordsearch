@@ -1,0 +1,86 @@
+[
+    {
+        "es": "PEAR",
+        "fr": "PEAR",
+        "en": "PEAR",
+        "kw": "PEAR",
+        "br": "PERO"
+    },
+    {
+        "es": "PEACH",
+        "fr": "PEACH",
+        "en": "PEACH",
+        "kw": "PEACH",
+        "br": "PESKAD"
+    },
+    {
+        "es": "CARROT",
+        "fr": "CARROT",
+        "en": "CARROT",
+        "kw": "CARROT",
+        "br": "CARROT"
+    },
+    {
+        "es": "TOMATO",
+        "fr": "TOMATO",
+        "en": "TOMATO",
+        "kw": "TOMATO",
+        "br": "TOMATO"
+    },
+    {
+        "es": "ONION",
+        "fr": "ONION",
+        "en": "ONION",
+        "kw": "ONION",
+        "br": "ONION"
+    },
+    {
+        "es": "POTATO",
+        "fr": "POTATO",
+        "en": "POTATO",
+        "kw": "POTATO",
+        "br": "POTATO"
+    },
+    {
+        "es": "BEAN",
+        "fr": "BEAN",
+        "en": "BEAN",
+        "kw": "BEAN",
+        "br": "BEAN"
+    },
+    {
+        "es": "RICE",
+        "fr": "RICE",
+        "en": "RICE",
+        "kw": "RICE",
+        "br": "RICE"
+    },
+    {
+        "es": "PASTA",
+        "fr": "PASTA",
+        "en": "PASTA",
+        "kw": "PASTA",
+        "br": "PASTA"
+    },
+    {
+        "es": "SOUP",
+        "fr": "SOUP",
+        "en": "SOUP",
+        "kw": "SOUP",
+        "br": "SOUP"
+    },
+    {
+        "es": "SALAD",
+        "fr": "SALAD",
+        "en": "SALAD",
+        "kw": "SALAD",
+        "br": "SALAD"
+    },
+    {
+        "es": "BREAKFAST",
+        "fr": "BREAKFAST",
+        "en": "BREAKFAST",
+        "kw": "BREAKFAST",
+        "br": "BREAKFAST"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "es": "SHOP",
+        "fr": "SHOP",
+        "en": "SHOP",
+        "kw": "SHOP",
+        "br": "SHOP"
+    },
+    {
+        "es": "STORE",
+        "fr": "STORE",
+        "en": "STORE",
+        "kw": "STORE",
+        "br": "STORE"
+    },
+    {
+        "es": "MARKET",
+        "fr": "MARKET",
+        "en": "MARKET",
+        "kw": "MARKET",
+        "br": "MARKET"
+    },
+    {
+        "es": "BUY",
+        "fr": "BUY",
+        "en": "BUY",
+        "kw": "BUY",
+        "br": "BUY"
+    },
+    {
+        "es": "SELL",
+        "fr": "SELL",
+        "en": "SELL",
+        "kw": "SELL",
+        "br": "SELL"
+    },
+    {
+        "es": "PRICE",
+        "fr": "PRICE",
+        "en": "PRICE",
+        "kw": "PRICE",
+        "br": "PRICE"
+    },
+    {
+        "es": "CHEAP",
+        "fr": "CHEAP",
+        "en": "CHEAP",
+        "kw": "CHEAP",
+        "br": "CHEAP"
+    },
+    {
+        "es": "EXPENSIVE",
+        "fr": "EXPENSIVE",
+        "en": "EXPENSIVE",
+        "kw": "EXPENSIVE",
+        "br": "EXPENSIVE"
+    },
+    {
+        "es": "MONEY",
+        "fr": "MONEY",
+        "en": "MONEY",
+        "kw": "MONEY",
+        "br": "MONEY"
+    },
+    {
+        "es": "CASH",
+        "fr": "CASH",
+        "en": "CASH",
+        "kw": "CASH",
+        "br": "CASH"
+    },
+    {
+        "es": "CARD",
+        "fr": "CARD",
+        "en": "CARD",
+        "kw": "CARD",
+        "br": "CARD"
+    },
+    {
+        "es": "BANK",
+        "fr": "BANK",
+        "en": "BANK",
+        "kw": "BANK",
+        "br": "BANK"
+    }
+]
