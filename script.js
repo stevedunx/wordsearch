@@ -283,17 +283,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Display the grid
         displayGrid(currentGrid, gridSize);
 
+        // Render persisted found-word lines for this puzzle
+        renderFoundLines();
+
         // Display the word list
         displayWordList(placedWords, listLang);
-
-        // Re-highlight any already-found cells (when returning to same puzzle)
-        if (foundWords.size > 0) {
-            placedWords.forEach(placement => {
-                if (foundWords.has(placement.source)) {
-                    highlightWord(placement);
-                }
-            });
-        }
 
         // Hide the input section to focus on the wordsearch
         document.querySelector('.input-section').style.display = 'none';
@@ -372,6 +366,17 @@ document.addEventListener('DOMContentLoaded', function() {
             gridDiv.appendChild(mobileHint);
         }
 
+        const gridWrapper = document.createElement('div');
+        gridWrapper.className = 'grid-wrapper';
+
+        const foundOverlay = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        foundOverlay.classList.add('selection-overlay', 'found-overlay');
+        foundOverlay.setAttribute('aria-hidden', 'true');
+
+        const activeOverlay = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        activeOverlay.classList.add('selection-overlay', 'active-overlay');
+        activeOverlay.setAttribute('aria-hidden', 'true');
+
         const gridElement = document.createElement('div');
         gridElement.className = 'grid';
         gridElement.style.gridTemplateColumns = `repeat(${size}, 28px)`;
@@ -392,7 +397,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-        gridDiv.appendChild(gridElement);
+        gridWrapper.appendChild(gridElement);
+        gridWrapper.appendChild(foundOverlay);
+        gridWrapper.appendChild(activeOverlay);
+        gridDiv.appendChild(gridWrapper);
     }
 
     function displayWordList(placements, displayKey) {
@@ -509,15 +517,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateSelectionDisplay() {
-        document.querySelectorAll('.cell.selected').forEach(cell => cell.classList.remove('selected'));
-        currentSelection.forEach(({ row, col }) => {
-            const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
-            if (cell) cell.classList.add('selected');
-        });
+        drawSelectionLine(currentSelection, 'active-overlay', 'selection-line-active', true);
     }
 
     function clearSelectionDisplay() {
-        document.querySelectorAll('.cell.selected').forEach(cell => cell.classList.remove('selected'));
+        const activeOverlay = document.querySelector('.active-overlay');
+        if (activeOverlay) activeOverlay.innerHTML = '';
         currentSelection = [];
     }
 
@@ -541,13 +546,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Mark found and persist
         foundWords.add(foundWord);
 
-        currentSelection.forEach(({ row, col }) => {
-            const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
-            if (cell) {
-                cell.classList.add('found');
-                cell.classList.remove('selected');
-            }
-        });
+        renderFoundLines();
 
         updateWordList();
     }
@@ -573,6 +572,61 @@ document.addEventListener('DOMContentLoaded', function() {
         cells.forEach(({ row, col }) => {
             const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
             if (cell) cell.classList.add('found');
+        });
+    }
+
+    function setOverlayViewport(overlay, wrapperRect) {
+        overlay.setAttribute('viewBox', `0 0 ${wrapperRect.width} ${wrapperRect.height}`);
+        overlay.setAttribute('width', `${wrapperRect.width}`);
+        overlay.setAttribute('height', `${wrapperRect.height}`);
+    }
+
+    function drawSelectionLine(cells, overlayClass, lineClass, clearFirst = false) {
+        const overlay = document.querySelector(`.${overlayClass}`);
+        const wrapper = document.querySelector('.grid-wrapper');
+        if (!overlay || !wrapper) return;
+
+        if (clearFirst) {
+            overlay.innerHTML = '';
+        }
+
+        if (!cells || cells.length === 0) return;
+
+        const first = cells[0];
+        const last = cells[cells.length - 1];
+        const firstCell = document.querySelector(`.cell[data-row="${first.row}"][data-col="${first.col}"]`);
+        const lastCell = document.querySelector(`.cell[data-row="${last.row}"][data-col="${last.col}"]`);
+        if (!firstCell || !lastCell) return;
+
+        const wrapperRect = wrapper.getBoundingClientRect();
+        setOverlayViewport(overlay, wrapperRect);
+
+        const firstRect = firstCell.getBoundingClientRect();
+        const lastRect = lastCell.getBoundingClientRect();
+
+        const x1 = firstRect.left - wrapperRect.left + firstRect.width / 2;
+        const y1 = firstRect.top - wrapperRect.top + firstRect.height / 2;
+        const x2 = lastRect.left - wrapperRect.left + lastRect.width / 2;
+        const y2 = lastRect.top - wrapperRect.top + lastRect.height / 2;
+
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', `${x1}`);
+        line.setAttribute('y1', `${y1}`);
+        line.setAttribute('x2', `${x2}`);
+        line.setAttribute('y2', `${y2}`);
+        line.setAttribute('class', lineClass);
+        overlay.appendChild(line);
+    }
+
+    function renderFoundLines() {
+        const foundOverlay = document.querySelector('.found-overlay');
+        if (!foundOverlay) return;
+        foundOverlay.innerHTML = '';
+
+        placedWords.forEach(placement => {
+            if (foundWords.has(placement.source)) {
+                drawSelectionLine(getWordCells(placement), 'found-overlay', 'selection-line-found', false);
+            }
         });
     }
 
