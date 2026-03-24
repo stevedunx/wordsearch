@@ -23,6 +23,17 @@ h1 {
     margin-bottom: 20px;
 }
 
+.setup-window {
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 14px;
+    background-color: #fafafa;
+}
+
+.setup-window p {
+    margin-top: 0;
+}
+
 .theme-selection {
     margin-bottom: 20px;
 }
@@ -62,6 +73,25 @@ h1 {
 .button-section {
     text-align: center;
     margin: 20px 0;
+}
+
+.theme-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.theme-buttons button {
+    margin: 0;
+}
+
+#back-to-language-btn {
+    background-color: #6c757d;
+}
+
+#back-to-language-btn:hover {
+    background-color: #5a6268;
 }
 
 .wordsearch-actions {

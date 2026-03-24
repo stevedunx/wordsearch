@@ -10,32 +10,43 @@
     <div class="container">
         <h1>Language Wordsearch</h1>
         <div class="input-section">
-            <p>Select a theme and languages, then find the word list language words in the grid.</p>
-            <div class="language-selection">
-                <div class="column">
-                    <h4>Grid Language:</h4>
-                    <label><input type="radio" name="grid-lang" value="es" checked> Spanish</label>
-                    <label><input type="radio" name="grid-lang" value="fr"> French</label>
-                    <label><input type="radio" name="grid-lang" value="en"> English</label>
-                    <label><input type="radio" name="grid-lang" value="kw"> Cornish</label>
+            <div id="language-window" class="setup-window">
+                <p>Select the language pair first.</p>
+                <div class="language-selection">
+                    <div class="column">
+                        <h4>Grid Language:</h4>
+                        <label><input type="radio" name="grid-lang" value="es" checked> Spanish</label>
+                        <label><input type="radio" name="grid-lang" value="fr"> French</label>
+                        <label><input type="radio" name="grid-lang" value="en"> English</label>
+                        <label><input type="radio" name="grid-lang" value="kw"> Cornish</label>
+                    </div>
+                    <div class="column">
+                        <h4>Word List Language:</h4>
+                        <label><input type="radio" name="list-lang" value="es"> Spanish</label>
+                        <label><input type="radio" name="list-lang" value="fr"> French</label>
+                        <label><input type="radio" name="list-lang" value="en"> English</label>
+                        <label><input type="radio" name="list-lang" value="kw"> Cornish</label>
+                    </div>
                 </div>
-                <div class="column">
-                    <h4>Word List Language:</h4>
-                    <label><input type="radio" name="list-lang" value="es"> Spanish</label>
-                    <label><input type="radio" name="list-lang" value="fr"> French</label>
-                    <label><input type="radio" name="list-lang" value="en"> English</label>
-                    <label><input type="radio" name="list-lang" value="kw"> Cornish</label>
+                <div class="button-section">
+                    <button id="to-theme-btn" type="button">Continue to Theme</button>
                 </div>
             </div>
-            <div class="theme-selection">
-                <h4>Theme:</h4>
-                <label><input type="radio" name="theme" value="food" checked> Food</label>
-                <label><input type="radio" name="theme" value="family"> Family Members</label>
+
+            <div id="theme-window" class="setup-window" hidden>
+                <p>Select a theme for this language pair.</p>
+                <div class="theme-selection">
+                    <h4>Theme:</h4>
+                    <label><input type="radio" name="theme" value="food"> Food</label>
+                    <label><input type="radio" name="theme" value="family"> Family Members</label>
+                </div>
+                <div class="button-section theme-buttons">
+                    <button id="back-to-language-btn" type="button">Back to Language Pair</button>
+                    <button id="generate-btn" type="button">Load Wordsearch</button>
+                </div>
             </div>
-            <div class="button-section">
-                <button id="generate-btn">Load Wordsearch</button>
-            </div>
-            <p id="direction-note" style="font-size:0.95em; color:#555;">Select theme and languages, then click "Load Wordsearch".</p>
+
+            <p id="direction-note" style="font-size:0.95em; color:#555;">Select a language pair, then continue to choose a theme.</p>
         </div>
         <div class="wordsearch-actions">
             <button id="back-to-selection" type="button" hidden>Back to Theme Selection</button>

@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const gridDiv = document.getElementById('grid');
     const wordListDiv = document.getElementById('word-list');
     const backToSelectionButton = document.getElementById('back-to-selection');
+    const languageWindow = document.getElementById('language-window');
+    const themeWindow = document.getElementById('theme-window');
+    const toThemeButton = document.getElementById('to-theme-btn');
+    const backToLanguageButton = document.getElementById('back-to-language-btn');
+    const generateButton = document.getElementById('generate-btn');
+    const directionNote = document.getElementById('direction-note');
     const themeRadios = document.querySelectorAll('input[name="theme"]');
     const gridLangRadios = document.querySelectorAll('input[name="grid-lang"]');
     const listLangRadios = document.querySelectorAll('input[name="list-lang"]');
@@ -18,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let wordData = [];
 
     let wordsLoaded = false;
+    let loadedTheme = null;
 
     function getUrlParams() {
         const params = new URLSearchParams(window.location.search);
@@ -56,48 +63,87 @@ document.addEventListener('DOMContentLoaded', function() {
             const listRadio = document.querySelector(`input[name="list-lang"][value="${list}"]`);
             if (listRadio) listRadio.checked = true;
         }
+    }
 
-        if (theme || grid || list) {
-            updateUrlParams(getCurrentTheme(), getCurrentGridLanguage(), getCurrentListLanguage());
-        }
+    function showLanguageWindow() {
+        languageWindow.hidden = false;
+        themeWindow.hidden = true;
+        directionNote.textContent = 'Select a language pair, then continue to choose a theme.';
+    }
+
+    function showThemeWindow() {
+        languageWindow.hidden = true;
+        themeWindow.hidden = false;
+        directionNote.textContent = 'Select a theme and click "Load Wordsearch".';
+    }
+
+    function hasLanguagePairSelected() {
+        return Boolean(getCurrentGridLanguage() && getCurrentListLanguage());
     }
 
     applyUrlSettings();
 
-    // Load words on page load; wait for selections to generate
-    loadWords().then(() => {
-        wordsLoaded = true;
-        if (!getCurrentListLanguage()) setDefaultListLanguage();
-        showDirectionPrompt();
+    if (!getCurrentListLanguage()) setDefaultListLanguage();
 
-        const { theme, grid, list } = getUrlParams();
-        if (theme && grid && list) {
+    const initialParams = getUrlParams();
+    if (initialParams.grid && initialParams.list) {
+        showThemeWindow();
+        updateUrlParams(null, getCurrentGridLanguage(), getCurrentListLanguage());
+    } else {
+        showLanguageWindow();
+    }
+    showDirectionPrompt();
+
+    // Auto-generate only when full URL state is present
+    if (initialParams.theme && initialParams.grid && initialParams.list) {
+        loadWords(initialParams.theme).then(() => {
+            wordsLoaded = true;
+            loadedTheme = initialParams.theme;
             generateWordsearch();
-        }
-    });
+        });
+    }
 
     themeRadios.forEach(radio => radio.addEventListener('change', () => {
         updateUrlParams(getCurrentTheme(), getCurrentGridLanguage(), getCurrentListLanguage());
-        loadWords().then(() => {
-            wordsLoaded = true;
-            if (!getCurrentListLanguage()) setDefaultListLanguage();
-        });
+        wordsLoaded = false;
+        loadedTheme = null;
     }));
     gridLangRadios.forEach(radio => radio.addEventListener('change', () => {
-        updateUrlParams(getCurrentTheme(), getCurrentGridLanguage(), getCurrentListLanguage());
+        updateUrlParams(null, getCurrentGridLanguage(), getCurrentListLanguage());
     }));
     listLangRadios.forEach(radio => radio.addEventListener('change', () => {
-        updateUrlParams(getCurrentTheme(), getCurrentGridLanguage(), getCurrentListLanguage());
+        updateUrlParams(null, getCurrentGridLanguage(), getCurrentListLanguage());
     }));
 
+    toThemeButton.addEventListener('click', () => {
+        if (!hasLanguagePairSelected()) {
+            directionNote.textContent = 'Select both grid and word list languages to continue.';
+            return;
+        }
+        updateUrlParams(null, getCurrentGridLanguage(), getCurrentListLanguage());
+        showThemeWindow();
+    });
+
+    backToLanguageButton.addEventListener('click', () => {
+        updateUrlParams(null, getCurrentGridLanguage(), getCurrentListLanguage());
+        showLanguageWindow();
+    });
+
     // Generate button event listener
-    document.getElementById('generate-btn').addEventListener('click', () => {
-        if (wordsLoaded) {
+    generateButton.addEventListener('click', () => {
+        const selectedTheme = getCurrentTheme();
+        if (!selectedTheme) {
+            directionNote.textContent = 'Select a theme before loading the wordsearch.';
+            return;
+        }
+
+        if (wordsLoaded && loadedTheme === selectedTheme) {
             generateWordsearch();
         } else {
             // If words not loaded yet, load them first
-            loadWords().then(() => {
+            loadWords(selectedTheme).then(() => {
                 wordsLoaded = true;
+                loadedTheme = selectedTheme;
                 generateWordsearch();
             });
         }
@@ -108,17 +154,18 @@ document.addEventListener('DOMContentLoaded', function() {
         backToSelectionButton.hidden = true;
         document.title = 'Wordsearch Generator';
         document.querySelector('h1').textContent = 'Language Wordsearch';
+        showThemeWindow();
         showDirectionPrompt();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
     function showDirectionPrompt() {
-        gridDiv.innerHTML = '<p style="color:#333;">Select your options above and click "Load Wordsearch" to begin.</p>';
+        gridDiv.innerHTML = '<p style="color:#333;">Choose options above and click "Load Wordsearch" to begin.</p>';
         wordListDiv.innerHTML = '';
     }
 
-    async function loadWords() {
-        const theme = getCurrentTheme();
+    async function loadWords(themeOverride = null) {
+        const theme = themeOverride || getCurrentTheme() || 'food';
         const fileName = theme === 'family' ? 'family.json' : 'food.json';
 
         try {
@@ -185,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getCurrentTheme() {
         const selected = document.querySelector('input[name="theme"]:checked');
-        return selected ? selected.value : 'food';
+        return selected ? selected.value : null;
     }
 
     function getCurrentGridLanguage() {
@@ -226,10 +273,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const gridLang = getCurrentGridLanguage();
         const listLang = getCurrentListLanguage();
         const note = document.getElementById('direction-note');
+        const theme = getCurrentTheme();
 
         // If no languages selected, require selection
         if (!gridLang || !listLang) {
             note.textContent = 'Select both grid and word list languages to generate the wordsearch.';
+            showDirectionPrompt();
+            return;
+        }
+
+        if (!theme) {
+            note.textContent = 'Select a theme to generate the wordsearch.';
             showDirectionPrompt();
             return;
         }
@@ -239,7 +293,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        const theme = getCurrentTheme();
         const themeName = theme === 'family' ? 'Family Members' : 'Food';
         const directionText = `${getLanguageDisplayName(listLang)} → ${getLanguageDisplayName(gridLang)} — ${themeName}`;
         note.textContent = 'Direction set to ' + directionText + '.';
