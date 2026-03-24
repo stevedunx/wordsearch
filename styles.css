@@ -179,6 +179,10 @@ button:hover {
     stroke-linecap: round;
 }
 
+.selection-point-active {
+    fill: rgba(41, 163, 255, 0.5);
+}
+
 .selection-line-found {
     stroke: rgba(255, 208, 51, 0.58);
     stroke-width: 16;

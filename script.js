@@ -500,11 +500,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const gridSize = currentGrid ? currentGrid.length : DEFAULT_GRID_SIZE;
         const dRow = end.row - start.row;
         const dCol = end.col - start.col;
-        const steps = Math.max(Math.abs(dRow), Math.abs(dCol));
-        if (steps === 0) return [start];
+        const absRow = Math.abs(dRow);
+        const absCol = Math.abs(dCol);
+        const isStraight = dRow === 0 || dCol === 0;
+        const isDiagonal = absRow === absCol;
 
-        const stepRow = dRow / steps;
-        const stepCol = dCol / steps;
+        if (dRow === 0 && dCol === 0) return [start];
+        if (!isStraight && !isDiagonal) return [start];
+
+        const steps = Math.max(absRow, absCol);
+        const stepRow = Math.sign(dRow);
+        const stepCol = Math.sign(dCol);
 
         for (let i = 0; i <= steps; i++) {
             const row = Math.round(start.row + i * stepRow);
@@ -608,6 +614,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const y1 = firstRect.top - wrapperRect.top + firstRect.height / 2;
         const x2 = lastRect.left - wrapperRect.left + lastRect.width / 2;
         const y2 = lastRect.top - wrapperRect.top + lastRect.height / 2;
+
+        if (cells.length === 1) {
+            const point = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            point.setAttribute('cx', `${x1}`);
+            point.setAttribute('cy', `${y1}`);
+            point.setAttribute('r', '8');
+            point.setAttribute('class', 'selection-point-active');
+            overlay.appendChild(point);
+            return;
+        }
 
         const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
         line.setAttribute('x1', `${x1}`);
