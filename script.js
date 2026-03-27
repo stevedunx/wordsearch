@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function setThemeOptions(catalog) {
         themeSelect.innerHTML = '<option value="">Select a theme</option>';
         // Temporarily show only food and relatives for translation checking
-        const visibleThemes = catalog.filter(theme => ['food', 'relatives'].includes(theme.id));
+        const visibleThemes = catalog.filter(theme => ['food', 'fruits', 'relatives', 'cardinal-numbers'].includes(theme.id));
         visibleThemes.forEach(theme => {
             const option = document.createElement('option');
             option.value = theme.id;

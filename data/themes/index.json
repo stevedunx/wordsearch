@@ -1,0 +1,17 @@
+[
+    {
+        "id": "fruits",
+        "name": "Fruits",
+        "file": "fruits.json"
+    },
+    {
+        "id": "relatives",
+        "name": "Relatives",
+        "file": "relatives.json"
+    },
+    {
+        "id": "cardinal-numbers",
+        "name": "Cardinal Numbers",
+        "file": "cardinal-numbers.json"
+    }
+]
