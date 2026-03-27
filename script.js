@@ -453,7 +453,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const themeMeta = themeCatalog.find(item => item.id === theme);
         const themeName = themeMeta ? themeMeta.name : theme;
-        const directionText = `${getLanguageDisplayName(listLang)} → ${getLanguageDisplayName(gridLang)} — ${themeName}`;
+        const listLangName = getLanguageDisplayName(listLang);
+        const gridLangName = getLanguageDisplayName(gridLang);
+        const languagePairText = listLang === gridLang
+            ? listLangName
+            : `${listLangName} → ${gridLangName}`;
+        const directionText = `${languagePairText} — ${themeName}`;
         note.textContent = 'Direction set to ' + directionText + '.';
 
         // Show selected pair/direction in page title and heading
@@ -506,7 +511,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.input-section').style.display = 'none';
         wordsearchActions.hidden = false;
         backToSelectionButton.hidden = false;
-        showTranslationsBtn.hidden = false;
+        showTranslationsBtn.hidden = (listLang == gridLang);
     }
 
     function createEmptyGrid(size) {
