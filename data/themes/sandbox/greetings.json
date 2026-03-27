@@ -1,0 +1,56 @@
+[
+    {
+        "en": "Hello",
+        "fr": "Bonjour",
+        "es": "Hola",
+        "kw": "Dydh da",
+        "br": "Demat",
+        "cy": "Bore da",
+        "cz": "Dobrý den"
+    },
+    {
+        "en": "Good morning",
+        "fr": "Bon matin",
+        "es": "Buenos días",
+        "kw": "Dydh da",
+        "br": "Demat",
+        "cy": "Bore da",
+        "cz": "Dobrý den"        
+    },
+    {
+        "en": "Good afternoon",
+        "fr": "Bon après-midi",
+        "es": "Buenas tardes",
+        "kw": "dohajydh da",
+        "br": "Trugarez",
+        "cy": "Prynhawn da",
+        "cz": "Děkuji"
+    },
+    {
+        "en": "Good evening",
+        "fr": "Bonsoir",
+        "es": "Buenas noches",
+        "kw": "gorthugher da",
+        "br": "Noz vat",
+        "cy": "Noswaith dda",
+        "cz": "Dobrý večer"
+    },
+    {
+        "en": "Good night",
+        "fr": "Bonne nuit",
+        "es": "Buenas noches",
+        "kw": "Nos da",
+        "br": "Noz vat",
+        "cy": "Nos da",
+        "cz": "Dobrou noc"
+    },
+    {
+        "en": "Welcome",
+        "fr": "Bienvenue",
+        "es": "Bienvenido",
+        "kw": "Croeso",
+        "br": "Degemer mat",
+        "cy": "Croeso",
+        "cz": "Vítejte"
+    }
+]

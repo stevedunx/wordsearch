@@ -40,11 +40,19 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
+    function normalizeLangCode(code) {
+        if (!code) return code;
+        const normalized = code.toLowerCase();
+        if (normalized === 'cs') return 'cz';
+        if (normalized === 'cym') return 'cy';
+        return normalized;
+    }
+
     function updateUrlParams(theme, gridLang, listLang) {
         const params = new URLSearchParams();
         if (theme) params.set('theme', theme);
-        if (gridLang) params.set('grid', gridLang);
-        if (listLang) params.set('list', listLang);
+        if (gridLang) params.set('grid', normalizeLangCode(gridLang));
+        if (listLang) params.set('list', normalizeLangCode(listLang));
         const newUrl = `${window.location.pathname}?${params.toString()}`;
         window.history.replaceState({}, '', newUrl);
     }
@@ -77,16 +85,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function applyUrlSettings() {
         const { theme, grid, list } = getUrlParams();
-        const validLangs = ['es', 'fr', 'en', 'kw', 'br'];
+        const validLangs = ['es', 'fr', 'en', 'kw', 'br', 'cy', 'cz'];
+        const normalizedGrid = normalizeLangCode(grid);
+        const normalizedList = normalizeLangCode(list);
         initialThemeFromUrl = normalizeThemeId(theme);
 
-        if (validLangs.includes(grid)) {
-            const gridRadio = document.querySelector(`input[name="grid-lang"][value="${grid}"]`);
+        if (validLangs.includes(normalizedGrid)) {
+            const gridRadio = document.querySelector(`input[name="grid-lang"][value="${normalizedGrid}"]`);
             if (gridRadio) gridRadio.checked = true;
         }
 
-        if (validLangs.includes(list)) {
-            const listRadio = document.querySelector(`input[name="list-lang"][value="${list}"]`);
+        if (validLangs.includes(normalizedList)) {
+            const listRadio = document.querySelector(`input[name="list-lang"][value="${normalizedList}"]`);
             if (listRadio) listRadio.checked = true;
         }
     }
@@ -274,7 +284,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 fr: item.fr ? item.fr.toUpperCase() : item.french.toUpperCase(),
                 en: item.en ? item.en.toUpperCase() : item.english.toUpperCase(),
                 kw: item.kw ? item.kw.toUpperCase() : '',
-                br: item.br ? item.br.toUpperCase() : ''
+                br: item.br ? item.br.toUpperCase() : '',
+                // Fallback to English until Welsh translations are added to theme files.
+                cy: item.cy ? item.cy.toUpperCase() : (item.en ? item.en.toUpperCase() : item.english.toUpperCase()),
+                // Fallback to English until Czech translations are added to theme files.
+                cz: item.cz ? item.cz.toUpperCase() : (item.en ? item.en.toUpperCase() : item.english.toUpperCase())
             }));
         } catch (error) {
             console.error('Error loading words:', error);
@@ -295,8 +309,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 return 'en';
             case 'kw':
                 return 'kw';
+            case 'br':
+                return 'br';
+            case 'cy':
+                return 'cy';
+            case 'cs':
+                return 'cz';
             default:
-                return 'fr'; // Default fallback
+                return 'en'; // Default fallback
         }
     }
 
@@ -310,7 +330,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function mapLangCodeToField(code) {
         // JSON now uses language code keys directly
-        if (['es', 'fr', 'en', 'kw', 'br'].includes(code)) return code;
+        if (['es', 'fr', 'en', 'kw', 'br', 'cy', 'cz'].includes(code)) return code;
         return 'fr';
     }
 
@@ -321,6 +341,8 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'en': return 'English';
             case 'kw': return 'Cornish';
             case 'br': return 'Breton';
+            case 'cy': return 'Welsh';
+            case 'cz': return 'Czech';
             default: return 'Unknown';
         }
     }
@@ -335,12 +357,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getCurrentGridLanguage() {
         const selected = document.querySelector('input[name="grid-lang"]:checked');
-        return selected ? selected.value : null;
+        return selected ? normalizeLangCode(selected.value) : null;
     }
 
     function getCurrentListLanguage() {
         const selected = document.querySelector('input[name="list-lang"]:checked');
-        return selected ? selected.value : null;
+        return selected ? normalizeLangCode(selected.value) : null;
     }
 
     function isTouchDevice() {

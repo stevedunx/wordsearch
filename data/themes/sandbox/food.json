@@ -4,104 +4,134 @@
         "fr": "PAIN",
         "en": "Bread",
         "kw": "BARA",
-        "br": "BARA"
+        "br": "BARA",
+        "cy": "BARA",
+        "cz": "chléb"
     },
     {
         "es": "QUESO",
         "fr": "FROMAGE",
         "en": "Cheese",
         "kw": "KEUS",
-        "br": "KEUS"
+        "br": "KEUS",
+        "cy": "CAWS",
+        "cz": "sýr"
     },
     {
         "es": "CARNE",
         "fr": "VIANDE",
         "en": "Meat",
         "kw": "KIG",
-        "br": "KIG"
+        "br": "KIG",
+        "cy": "CIG",
+        "cz": "MASO"
     },
     {
         "es": "PESCADO",
         "fr": "POISSON",
         "en": "Fish",
         "kw": "PYSK",
-        "br": "PESK"
+        "br": "PESK",
+        "cy": "pysgodyn",
+        "cz": "RYBA"
     },
     {
         "es": "VERDURAS",
         "fr": "LÉGUMES",
         "en": "Vegetables",
-        "kw": "LYSOW",
-        "br": "LOUZOÙ"
+        "kw": "losow kegin",
+        "br": "LOUZOÙ",
+        "cy": "LLYSIAU",
+        "cz": "ZELENINA"
     },
     {
         "es": "FRUTA",
         "fr": "FRUIT",
         "en": "Fruit",
         "kw": "FRUT",
-        "br": "FROUEZH"
+        "br": "FROUEZH",
+        "cy": "FFRWYTH",
+        "cz": "OVOCE"
     },
     {
         "es": "AGUA",
         "fr": "EAU",
         "en": "Water",
         "kw": "DOWR",
-        "br": "DOUR"
+        "br": "DOUR",
+        "cy": "DWR",
+        "cz": "VODA"
     },
     {
         "es": "VINO",
         "fr": "VIN",
         "en": "Wine",
         "kw": "GWIN",
-        "br": "GWIN"
+        "br": "GWIN",
+        "cy": "GWIN",
+        "cz": "VINO"
     },
     {
         "es": "CAFÉ",
         "fr": "CAFÉ",
         "en": "Coffee",
         "kw": "KOFFI",
-        "br": "KAFE"
+        "br": "KAFE",
+        "cy": "COFFI",
+        "cz": "KAVA"
     },
     {
         "es": "TÉ",
         "fr": "THÉ",
         "en": "Tea",
         "kw": "TE",
-        "br": "TI"
+        "br": "TI",
+        "cy": "TE",
+        "cz": "CAJ"
     },
     {
         "es": "HUEVO",
         "fr": "OEUF",
         "en": "Egg",
         "kw": "OY",
-        "br": "OY"
+        "br": "OY",
+        "cy": "WY",
+        "cz": "VEJCE"
     },
     {
         "es": "LECHE",
         "fr": "LAIT",
         "en": "Milk",
         "kw": "LETH",
-        "br": "LAEZH"
+        "br": "LAEZH",
+        "cy": "LLAETH",
+        "cz": "MLEKO"
     },
     {
         "es": "MANTEQUILLA",
         "fr": "BEURRE",
         "en": "Butter",
         "kw": "AMANYN",
-        "br": "STER"
+        "br": "STER",
+        "cy": "MENYN",
+        "cz": "MASLO"
     },
     {
         "es": "AZÃšCAR",
         "fr": "SUCRE",
         "en": "Sugar",
         "kw": "SUGRA",
-        "br": "SUKR"
+        "br": "SUKR",
+        "cy": "SIWGR",
+        "cz": "CUKR"
     },
     {
         "es": "SAL",
         "fr": "SEL",
         "en": "Salt",
         "kw": "SALLA",
-        "br": "HAÑS"
+        "br": "HAÑS",
+        "cy": "HALEN",
+        "cz": "SUL"
     }
 ]

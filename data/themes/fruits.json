@@ -1,93 +1,119 @@
 [
     {
+        "en": "Apple",
         "es": "MANZANA",
         "fr": "POMME",
-        "en": "Apple",
         "kw": "AVAL",
-        "br": "AVAL"
+        "br": "AVAL",
+        "cy": "AFAL",
+        "cz": "JABLKO"
     },
     {
+        "en": "Banana",
         "es": "PLATANO",
         "fr": "BANANE",
-        "en": "Banana",
         "kw": "BANONEN",
-        "br": "BANANN"
+        "br": "BANANN",
+        "cy": "BANANA",
+        "cz": "BANAN"
     },
     {
+        "en": "Grapes",
         "es": "UVAS",
         "fr": "RAISINS",
-        "en": "Grapes",
         "kw": "DRAYEN",
-        "br": "DRAJENN"
+        "br": "DRAJENN",
+        "cy": "GRAWNWIN",
+        "cz": "HROZNY"
     },
     {
+        "en": "Orange",
         "es": "NARANJA",
         "fr": "ORANGE",
-        "en": "Orange",
         "kw": "ORANZH",
-        "br": "ORANJ"
+        "br": "ORANJ",
+        "cy": "OREN",
+        "cz": "POMERANC"
     },
     {
+        "en": "Strawberry",
         "es": "FRESA",
         "fr": "FRAISE",
-        "en": "Strawberry",
         "kw": "STER",
-        "br": "MEZBLED"
+        "br": "MEZBLED",
+        "cy": "MEFUSEN",
+        "cz": "JAHODA"
     },
     {
+        "en": "Blueberry",
         "es": "ARANDANO",
         "fr": "MYRTILLE",
-        "en": "Blueberry",
         "kw": "BLUEBERRY",
-        "br": "DELVEZ"
+        "br": "DELVEZ",
+        "cy": "LLUS",
+        "cz": "BORUVKA"
     },
     {
+        "en": "Watermelon",
         "es": "SANDIA",
         "fr": "PASTEQUE",
-        "en": "Watermelon",
         "kw": "MELLIONEN",
-        "br": "MELONMOR"
+        "br": "MELONMOR",
+        "cy": "MELON DWR",
+        "cz": "MELUN"
     },
     {
+        "en": "Peach",
         "es": "MELOCOTON",
         "fr": "PECHE",
-        "en": "Peach",
         "kw": "PESCHEN",
-        "br": "PESKAD"
+        "br": "PESKAD",
+        "cy": "EIRIN GWLANOG",
+        "cz": "BROSKEV"
     },
     {
+        "en": "Lemon",
         "es": "LIMON",
         "fr": "CITRON",
-        "en": "Lemon",
         "kw": "LEMM",
-        "br": "LEMONED"
+        "br": "LEMONED",
+        "cy": "LEMON",
+        "cz": "CITRON"
     },
     {
+        "en": "Pear",
         "es": "PERA",
         "fr": "POIRE",
-        "en": "Pear",
         "kw": "PEER",
-        "br": "PERO"
+        "br": "PERO",
+        "cy": "GELLYG",
+        "cz": "HRUSKA"
     },
     {
+        "en": "Pineapple",
         "es": "PINA",
         "fr": "ANANAS",
-        "en": "Pineapple",
         "kw": "ANANAZ",
-        "br": "PRUÑSTI"
+        "br": "PRUÑSTI",
+        "cy": "PINAFAL",
+        "cz": "ANANAS"
     },
     {
+        "en": "Raspberry",
         "es": "FRAMBUESA",
         "fr": "FRAMBOISE",
-        "en": "Raspberry",
         "kw": "FRAMWOSEN",
-        "br": "MEZRUZ"
+        "br": "MEZRUZ",
+        "cy": "MAFON",
+        "cz": "MALINA"
     },
     {
+        "en": "Mango",
         "es": "MANGO",
         "fr": "MANGUE",
-        "en": "Mango",
         "kw": "MANGO",
-        "br": "MANGO"
+        "br": "MANGO",
+        "cy": "MANGO",
+        "cz": "MANGO"
     }
 ]
